@@ -1,0 +1,31 @@
+db_index	motif_id	motif_alt_id	consensus	E-value	adj_p-value	log_adj_p-value	bin_location	bin_width	total_width	sites_in_bin	total_sites	p_success	p-value	mult_tests
+   4	MA1829.1	Zm00001d035604	NNTACCTAACHNN	4.9e-2	   2.1e-5	         -10.78	         0.0	     19.0	         89	         196	        663	  0.21348	4.7e-7	        44
+   4	MA0306.1	GIS1	HCCCCTWWN	5.3e-2	   2.3e-5	         -10.70	         0.0	     37.0	         93	         319	        646	  0.39785	4.9e-7	        46
+   4	MA0111.1	Spz1	AGGGTWWCAGC	7.9e-2	   3.3e-5	         -10.31	         0.0	      9.0	         91	          97	        594	  0.09890	7.4e-7	        45
+   4	MA0366.1	RGM1	AGGGG	2.2e-1	   9.4e-5	          -9.27	         0.0	     57.0	         97	         542	        812	  0.58763	2.0e-6	        48
+   4	MA1708.1	ETV7	DGSCGGAAGTR	4.1e-1	   1.8e-4	          -8.65	         0.0	     57.0	         91	         605	        865	  0.62637	3.9e-6	        45
+   3	UP00087_2	Tcfap2c_secondary	NYGCCCDAGGGCWD	5.3e-1	   2.3e-4	          -8.39	         0.0	     28.0	         88	         276	        693	  0.31818	5.3e-6	        43
+   4	MA0820.1	FIGLA	WMCACCTGKW	9.2e-1	   3.9e-4	          -7.85	         0.0	     26.0	         92	         216	        592	  0.28261	8.7e-6	        45
+   4	MA0065.2	Pparg::Rxra	STRGGGCARAGGKCA	1.0e0	   4.2e-4	          -7.77	         0.0	     39.0	         87	         414	        789	  0.44828	9.9e-6	        43
+   4	MA0254.1	vvl	TATKCA	1.0e0	   4.4e-4	          -7.73	         0.0	     14.0	         96	         321	       1751	  0.14583	9.4e-6	        47
+   2	5-AAAGGGA	STREME-5	AAAGGGA	1.1e0	   4.9e-4	          -7.63	         0.0	     59.0	         95	         551	        794	  0.62105	1.0e-5	        47
+   4	MA1536.1	NR2C2	RRGGTCAN	1.2e0	   5.0e-4	          -7.60	         0.0	     30.0	         94	         496	       1324	  0.31915	1.1e-5	        46
+   4	MA1771.1	MYB41	DTDGTTYACCTAMYT	1.3e0	   5.6e-4	          -7.49	         0.0	      5.0	         87	          42	        360	  0.05747	1.3e-5	        43
+   3	UP00027_2	Osr1_secondary	RHHHGCTACYWRMDNN	1.3e0	   5.7e-4	          -7.46	         0.0	     14.0	         86	         234	       1107	  0.16279	1.4e-5	        42
+   4	MA0474.3	Erg	NNACAGGAAGTGVN	1.8e0	   7.7e-4	          -7.17	         0.0	     76.0	         88	         725	        795	  0.86364	1.8e-5	        43
+   4	MA1111.1	NR2F2	NAAAGGTCANR	2.3e0	   1.0e-3	          -6.91	         0.0	      5.0	         91	          69	        745	  0.05495	2.2e-5	        45
+   3	UP00088_2	Plagl1_secondary	NNTGGGGGGTACCNHND	3.7e0	   1.6e-3	          -6.45	         0.0	      3.0	         85	          19	        186	  0.03529	3.8e-5	        42
+   4	MA2031.1	AT5G04760	WHCTTATCYNH	4.0e0	   1.7e-3	          -6.39	         0.0	     47.0	         91	         502	        859	  0.51648	3.7e-5	        45
+   4	MA0635.1	BARHL2	VHTAAAYGRT	4.8e0	   2.0e-3	          -6.20	         0.0	     20.0	         92	         333	       1260	  0.21739	4.5e-5	        45
+   4	MA0775.1	MEIS3	DTGACAGS	6.3e0	   2.7e-3	          -5.92	         0.0	     14.0	         94	         194	        998	  0.14894	5.9e-5	        46
+   4	MA0643.1	Esrrg	TCAAGGTCAH	7.1e0	   3.0e-3	          -5.80	         0.0	     12.0	         92	          77	        382	  0.13043	6.7e-5	        45
+   4	MA0101.1	REL	BGGRNWTTCC	7.5e0	   3.2e-3	          -5.75	         0.0	      6.0	         92	          75	        726	  0.06522	7.1e-5	        45
+   4	MA0279.2	CAD1	NKTGCTTACTAATHND	7.7e0	   3.3e-3	          -5.73	         0.0	     28.0	         86	         165	        395	  0.32558	7.8e-5	        42
+   4	MA1920.1	Tbox-b	CYNNNNNAGGTGTGAAWHNYMN	8.5e0	   3.6e-3	          -5.62	         0.0	     28.0	         80	         332	        800	  0.35000	9.3e-5	        39
+   4	MA0410.1	UGA3	SGGCGGGA	8.8e0	   3.7e-3	          -5.59	         0.0	     16.0	         94	          54	        190	  0.17021	8.1e-5	        46
+   4	MA2048.1	NAC045	NDGAAGCAACCWN	8.9e0	   3.8e-3	          -5.58	         0.0	      7.0	         89	         130	       1182	  0.07865	8.6e-5	        44
+   4	MA1535.1	NR2C1	NRRGGTCAN	8.9e0	   3.8e-3	          -5.58	         0.0	     11.0	         93	         104	        608	  0.11828	8.2e-5	        46
+
+# CentriMo (Local Motif Enrichment Analysis): Version 5.5.7 compiled on Aug 29 2024 at 17:50:13
+# The format of this file is described at https://meme-suite.org/meme/doc/centrimo-output-format.html.
+# centrimo -seqlen 101 -verbosity 1 -oc centrimo_out -bfile ./background -score 5.0 -ethresh 10.0 ./DMSO_1_sequences.fa meme_out/meme.xml streme_out/streme.xml db/motif_databases/MOUSE/uniprobe_mouse.meme db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme

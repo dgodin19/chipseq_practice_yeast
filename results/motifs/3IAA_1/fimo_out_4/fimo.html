@@ -1,0 +1,530 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:cis="http://zlab.bu.edu/schema/cisml" xmlns:fimo="http://noble.gs.washington.edu/schema/cisml" xmlns:mem="http://noble.gs.washington.edu/meme">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>FIMO Results</title>
+<style type="text/css">
+td.left {text-align: left;}
+td.right {text-align: right; padding-right: 1cm;}
+</style>
+</head>
+<body color="#000000">
+<a name="top_buttons"></a>
+<hr>
+<table summary="buttons" align="left" cellspacing="0">
+<tr>
+<td bgcolor="#00FFFF"><a href="#database_and_motifs"><b>Database and Motifs</b></a></td>
+<td bgcolor="#DDFFDD"><a href="#sec_i"><b>High-scoring Motif Occurences</b></a></td>
+<td bgcolor="#DDDDFF"><a href="#debugging_information"><b>Debugging Information</b></a></td>
+<td bgcolor="#FFDD00"><a href="fimo.tsv""><b>Results in TSV Format</b></a></td>
+<td bgcolor="#FFDDFF"><a href="fimo.gff""><b>Results in GFF3 Format</b></a></td>
+<td bgcolor="#00FFFF" id="best_site"><a href="best_site.narrowPeak""><b>Best Site per Sequence</b></a></td>
+<script>
+var new_icon_src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAQCAMAAAAyEe/dAAAACVBMVEX//wAAAAD////s2cV/AAAAdUlEQVQYlXVRBxLAIAhL+P+jC2HZhXcBZEWEldDsZcLIcAhHWWnK8SDcWQhMFUHdAQ1CqQ5+CWPmlHojl+nCJNRtzu4qRc3IUzmTVpXYK0nox0z0PI1stgchdK7lEv7ekhvalw8WW547Gyzedt/2/gLx8WXjXF/1AYFriNAWAAAAAElFTkSuQmCC";
+var new_icon = document.createElement("img");
+new_icon.src = new_icon_src;
+new_icon.alt = "NEW";
+const elem = document.getElementById("best_site");
+elem.appendChild(document.createTextNode("  "));
+elem.appendChild(new_icon);
+</script>
+</tr>
+</table>
+<br/>
+<br/>
+<hr/>
+<center><big><b>FIMO - Motif search tool</b></big></center>
+<hr>
+<p>
+FIMO version 5.5.7, (Release date: Wed Jun 19 13:59:04 2024 -0700)
+</p>
+<p>
+For further information on how to interpret these results please access <a href="https://meme-suite.org/meme/doc/fimo-output-format.html">https://meme-suite.org/meme/doc/fimo-output-format.html</a>.<br>
+To get a copy of the FIMO software please access <a href="https://meme-suite.org">https://meme-suite.org</a>
+
+</p>
+<p>If you use FIMO in your research, please cite the following paper:<br>
+Charles E. Grant, Timothy L. Bailey, and William Stafford Noble,
+"FIMO: Scanning for occurrences of a given motif",
+<i>Bioinformatics</i>, <b>27</b>(7):1017-1018, 2011.
+<a href="http://bioinformatics.oxfordjournals.org/content/27/7/1017">[full text]</a></p>
+<hr>
+<center><big><b><a name="database_and_motifs">DATABASE AND MOTIFS</a></b></big></center>
+<hr>
+<div style="padding-left: 0.75in; line-height: 1em; font-family: monospace;">
+<p>
+  DATABASE ./3IAA_1_sequences.fa
+  <br />
+  Database contains 872 sequences, 88058 residues
+</p>
+<p>
+  MOTIFS streme_out/streme.xml (DNA)
+  <table>
+    <thead>
+      <tr>
+        <th style="border-bottom: 1px dashed;">MOTIF</th>
+        <th style="border-bottom: 1px dashed; padding-left: 1em;">WIDTH</th>
+        <th style="border-bottom: 1px dashed; padding-left: 1em;text-align:left;" >
+         BEST POSSIBLE MATCH
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align:right;">1-GAATCGAACCSGKG</td>
+        <td style="text-align:right;padding-left: 1em;">14</td>
+        <td style="text-align:left;padding-left: 1em;">GAATCGAACCCGGG</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">2-CATCGTK</td>
+        <td style="text-align:right;padding-left: 1em;">7</td>
+        <td style="text-align:left;padding-left: 1em;">CATCGTG</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">3-WACCACTAVRCCAMN</td>
+        <td style="text-align:right;padding-left: 1em;">15</td>
+        <td style="text-align:left;padding-left: 1em;">AACCACTAGGCCACG</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">4-ATGCGAGAG</td>
+        <td style="text-align:right;padding-left: 1em;">9</td>
+        <td style="text-align:left;padding-left: 1em;">ATGCGAGAG</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">5-CCAACTGAGCT</td>
+        <td style="text-align:right;padding-left: 1em;">11</td>
+        <td style="text-align:left;padding-left: 1em;">CCAACTGAGCT</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">6-ATATATATAT</td>
+        <td style="text-align:right;padding-left: 1em;">10</td>
+        <td style="text-align:left;padding-left: 1em;">ATATATATAT</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">7-AAGGCGMMAGAYT</td>
+        <td style="text-align:right;padding-left: 1em;">13</td>
+        <td style="text-align:left;padding-left: 1em;">AAGGCGCCAGATT</td>
+       </tr>
+    </tbody>
+  </table>
+</p>
+<p>
+Random model letter frequencies (./background):
+<br/>
+
+A 0.312 C 0.188 G 0.188 T 0.312 </p>
+</div>
+<hr>
+<center><big><b><a name="sec_i">SECTION I: HIGH-SCORING MOTIF OCCURENCES</a></b></big></center>
+<hr>
+<ul>
+<li>
+There were 28 motif occurences with a p-value less than 0.0001.
+
+The full set of motif occurences can be seen in the
+TSV (tab-delimited values) output file
+<a href="fimo.tsv">fimo.tsv</a>, 
+the GFF3 file 
+<a href="fimo.gff">fimo.gff</a> 
+which may be suitable for uploading to the 
+<a href="http://genome.ucsc.edu/cgi-bin/hgTables">UCSC Genome Table Browser</a>
+(assuming the FASTA input sequences included genomic coordinates in UCSC or Galaxy format),
+or the XML file 
+<a href="fimo.xml">fimo.xml</a>.
+</li>
+<li>
+The <i>p</i>-value of a motif occurrence is defined as the
+probability of a random sequence of the same length as the motif
+matching that position of the sequence with as good or better a score.
+</li>
+<li>
+The score for the match of a position in a sequence to a motif
+is computed by summing the appropriate entries from each column of
+the position-dependent scoring matrix that represents the motif.
+</li>
+<li>
+The q-value of a motif occurrence is defined as the
+false discovery rate if the occurrence is accepted as significant.
+</li>
+<li>The table is sorted by increasing <i>p</i>-value.</li>
+</ul>
+<table border="1">
+<thead>
+<tr>
+<th>Motif ID</th>
+<th>Alt ID</th>
+<th>Sequence Name</th>
+<th>Strand</th>
+<th>Start</th>
+<th>End</th>
+<th>p-value</th>
+<th>q-value</th>
+<th>Matched Sequence</th>
+</tr>
+</thead>
+<tbody>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001137.3</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">7550</td>
+      <td style="text-align:left;">7556</td>
+      <td style="text-align:left;">3.79e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CATCGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001145.3</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">131828</td>
+      <td style="text-align:left;">131834</td>
+      <td style="text-align:left;">3.79e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CATCGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001137.3</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">138726</td>
+      <td style="text-align:left;">138732</td>
+      <td style="text-align:left;">3.79e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CATCGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001143.9</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">162490</td>
+      <td style="text-align:left;">162496</td>
+      <td style="text-align:left;">3.79e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CATCGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001142.9</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">295151</td>
+      <td style="text-align:left;">295157</td>
+      <td style="text-align:left;">3.79e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CATCGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001142.9</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">374509</td>
+      <td style="text-align:left;">374515</td>
+      <td style="text-align:left;">3.79e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CATCGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001139.9</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">405530</td>
+      <td style="text-align:left;">405536</td>
+      <td style="text-align:left;">3.79e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CATCGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001134.8</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">405938</td>
+      <td style="text-align:left;">405944</td>
+      <td style="text-align:left;">3.79e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CATCGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001141.2</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">420837</td>
+      <td style="text-align:left;">420843</td>
+      <td style="text-align:left;">3.79e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">catCGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001147.6</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">458130</td>
+      <td style="text-align:left;">458136</td>
+      <td style="text-align:left;">3.79e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CATCGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001136.10</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">568942</td>
+      <td style="text-align:left;">568948</td>
+      <td style="text-align:left;">3.79e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CATCGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001136.10</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">657523</td>
+      <td style="text-align:left;">657529</td>
+      <td style="text-align:left;">3.79e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CATCGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001136.10</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">842090</td>
+      <td style="text-align:left;">842096</td>
+      <td style="text-align:left;">3.79e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CATCGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001143.9</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">141047</td>
+      <td style="text-align:left;">141053</td>
+      <td style="text-align:left;">6.08e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CACCGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001137.3</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">177133</td>
+      <td style="text-align:left;">177139</td>
+      <td style="text-align:left;">6.08e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CACCGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001134.8</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">197518</td>
+      <td style="text-align:left;">197524</td>
+      <td style="text-align:left;">6.08e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CACCGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001147.6</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">273801</td>
+      <td style="text-align:left;">273807</td>
+      <td style="text-align:left;">6.08e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CACCGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001139.9</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">328617</td>
+      <td style="text-align:left;">328623</td>
+      <td style="text-align:left;">6.08e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CACCGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001137.3</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">354968</td>
+      <td style="text-align:left;">354974</td>
+      <td style="text-align:left;">6.08e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CACCGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001137.3</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">443243</td>
+      <td style="text-align:left;">443249</td>
+      <td style="text-align:left;">6.08e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CACCGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001139.9</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">541884</td>
+      <td style="text-align:left;">541890</td>
+      <td style="text-align:left;">6.08e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CACCGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001146.8</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">602336</td>
+      <td style="text-align:left;">602342</td>
+      <td style="text-align:left;">6.08e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CACCGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001134.8</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">618814</td>
+      <td style="text-align:left;">618820</td>
+      <td style="text-align:left;">6.08e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CACCGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001134.8</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">645201</td>
+      <td style="text-align:left;">645207</td>
+      <td style="text-align:left;">6.08e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CACCGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001144.5</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">797212</td>
+      <td style="text-align:left;">797218</td>
+      <td style="text-align:left;">6.08e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CACCGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001148.4</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">819553</td>
+      <td style="text-align:left;">819559</td>
+      <td style="text-align:left;">6.08e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CACCGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001148.4</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">880337</td>
+      <td style="text-align:left;">880343</td>
+      <td style="text-align:left;">6.08e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CACCGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">2-CATCGTK</td>
+      <td style="text-align:left;">STREME-2</td>
+      <td style="text-align:left;">NC_001136.10</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">1017236</td>
+      <td style="text-align:left;">1017242</td>
+      <td style="text-align:left;">6.08e-05</td>
+      <td style="text-align:left;">0.36</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CACCGTG</td>
+   </tr>
+</tbody>
+</table>
+
+<hr>
+<center><big><b><a name="debugging_information">DEBUGGING INFORMATION</a></b></big></center>
+<hr>
+<p>
+Command line:
+</p>
+<pre>
+fimo --verbosity 1 --oc fimo_out_4 --bgfile ./background --motif 2-CATCGTK streme_out/streme.xml ./3IAA_1_sequences.fa
+</pre>
+<p>
+Settings:
+</p>
+<pre>
+<table>
+  <tr>
+    <td style="padding-right: 2em">output_directory = fimo_out_4</td>
+    <td style="padding-left: 5em; padding-right: 2em">MEME file name = streme_out/streme.xml</td>
+    <td style="padding-left: 5em; padding-right: 2em">sequence file name = ./3IAA_1_sequences.fa</td>
+  </tr>  <tr>
+    <td style="padding-right: 2em">background file name = ./background</td>
+    <td style="padding-left: 5em; padding-right: 2em">alphabet = DNA</td>
+    <td style="padding-left: 5em; padding-right: 2em">max stored scores = 100000</td>
+  </tr>  <tr>
+    <td style="padding-right: 2em">allow clobber = true</td>
+    <td style="padding-left: 5em; padding-right: 2em">compute q-values = true</td>
+    <td style="padding-left: 5em; padding-right: 2em">parse genomic coord. = true</td>
+  </tr>
+  <tr>
+    <td style="padding-right: 2em">text only = false</td>
+    <td style="padding-left: 5em; padding-right: 2em">scan both strands = true</td>
+    <td style="padding-left: 5em; padding-right: 2em">max strand = false</td>
+  </tr>
+  <tr>
+    <td style="padding-right: 2em">threshold type = p-value</td>
+    <td style="padding-left: 5em; padding-right: 2em">output theshold = 0.0001</td>
+    <td style="padding-left: 5em; padding-right: 2em">pseudocount = 0.1</td>
+  </tr>
+  <tr>
+    <td style="padding-right: 2em">alpha = 1</td>
+    <td style="padding-left: 5em; padding-right: 2em">verbosity = 1</td>
+    <td style="padding-left: 5em; padding-right: 2em"></td>
+  </tr>
+
+</table>
+</pre>
+<p>
+This information can be useful in the event you wish to report a
+problem with the FIMO software.
+</p>
+<hr>
+<span style="background-color: #DDDDFF"><a href="#top_buttons"><b>Go to top</b></a></span>
+</body>
+</html>

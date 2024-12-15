@@ -1,0 +1,13 @@
+Query_ID	Target_ID	Optimal_offset	p-value	E-value	q-value	Overlap	Query_consensus	Target_consensus	Orientation
+1-GAATCGAACCSGKG	MA0349.1	-4	0.000190919	0.447132	0.892025	7	GAATCGAACCCGGG	CGAACCG	+
+1-GAATCGAACCSGKG	MA1971.1	0	0.000380882	0.892025	0.892025	14	GAATCGAACCCGGG	GCAACGAAACCAGG	+
+6-ATATATATAT	MA0386.1	6	2.04904e-05	0.0479885	0.0479885	10	ATATATATAT	GACTAGATATATATATTCGAT	+
+6-ATATATATAT	MA0015.1	0	4.18083e-05	0.097915	0.0489575	10	ATATATATAT	GTATATATAC	+
+6-ATATATATAT	UP00029_1	5	0.00029071	0.680843	0.18309	10	ATATATATAT	TCTTTATATATAAATA	+
+6-ATATATATAT	MA0379.1	-4	0.000312707	0.732359	0.18309	5	ATATATATAT	ATATA	+
+6-ATATATATAT	UP00094_2	1	0.0004104	0.961158	0.192232	10	ATATATATAT	TGTATATATATACC	+
+7-AAGGCGMMAGAYT	MA0213.1	-2	0.000130891	0.306547	0.613094	8	AAGGCGCCAGATT	GGCGCCAG	-
+
+# Tomtom (Motif Comparison Tool): Version 5.5.7 compiled on Aug 29 2024 at 17:50:26
+# The format of this file is described at https://meme-suite.org/meme/doc/tomtom-output-format.html.
+# tomtom -verbosity 1 -oc streme_tomtom_out -min-overlap 5 -dist pearson -evalue -thresh 1 -no-ssc streme_out/streme.xml db/motif_databases/MOUSE/uniprobe_mouse.meme db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme

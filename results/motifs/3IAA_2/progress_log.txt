@@ -1,0 +1,70 @@
+Invoking:
+  getsize ./3IAA_2_sequences.fa 1> $metrics
+Finished invoke:
+  name: count_seqs  status: 0  time: 0.004272
+Invoking:
+  fasta-most -min 50 < ./3IAA_2_sequences.fa 1> $metrics
+Finished invoke:
+  name: most_seqs  status: 0  time: 0.05093
+Invoking:
+  fasta-center -dna -len 100 < ./3IAA_2_sequences.fa 1> ./seqs-centered
+Finished invoke:
+  name: center_seqs  status: 0  time: 0.061753
+Invoking:
+  fasta-get-markov -nostatus -nosummary -dna -m 2 ./3IAA_2_sequences.fa ./background
+Finished invoke:
+  name: bg  status: 0  time: 0.003804
+Invoking:
+  meme ./seqs-centered -oc meme_out -mod zoops -nmotifs 3 -minw 6 -maxw 15 -bfile ./background -dna -seed 0 -searchsize 100000 -time 2919 -revcomp -nostatus
+Finished invoke:
+  name: meme  status: 0  time: 781.131274
+Invoking:
+  streme --verbosity 1 --oc streme_out -dna --seed 0 --p ./seqs-centered --minw 6 --maxw 15 --time 5861 --order 2 --thresh 0.05 --align center --totallength 4000000
+Finished invoke:
+  name: streme  status: 0  time: 10.623898
+Invoking:
+  centrimo -seqlen 101 -verbosity 1 -oc centrimo_out -bfile ./background -score 5.0 -ethresh 10.0 ./3IAA_2_sequences.fa meme_out/meme.xml streme_out/streme.xml db/motif_databases/MOUSE/uniprobe_mouse.meme db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme
+Finished invoke:
+  name: centrimo  status: 0  time: 10.418199
+Invoking:
+  tomtom -verbosity 1 -oc meme_tomtom_out -min-overlap 5 -dist pearson -evalue -thresh 1 -no-ssc meme_out/meme.xml db/motif_databases/MOUSE/uniprobe_mouse.meme db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme
+Finished invoke:
+  name: meme_tomtom  status: 0  time: 16.722281
+Invoking:
+  tomtom -verbosity 1 -oc streme_tomtom_out -min-overlap 5 -dist pearson -evalue -thresh 1 -no-ssc streme_out/streme.xml db/motif_databases/MOUSE/uniprobe_mouse.meme db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme
+Finished invoke:
+  name: streme_tomtom  status: 0  time: 22.055277
+Invoking:
+  tomtom -verbosity 1 -text -thresh 0.1 ./combined.meme ./combined.meme 1> ./motif_alignment.txt
+Finished invoke:
+  name: align  status: 0  time: 0.681999
+Invoking:
+  spamo -verbosity 1 -oc spamo_out_1 -bgfile ./background -keepprimary -primary CVBSGGTTCGATYCC ./3IAA_2_sequences.fa meme_out/meme.xml meme_out/meme.xml streme_out/streme.xml
+Finished invoke:
+  name: spamo1  status: 0  time: 0.272599
+Invoking:
+  spamo -verbosity 1 -oc spamo_out_2 -bgfile ./background -keepprimary -primary YTAMCCACTRVRCCA ./3IAA_2_sequences.fa meme_out/meme.xml meme_out/meme.xml streme_out/streme.xml
+Finished invoke:
+  name: spamo2  status: 0  time: 0.273557
+Invoking:
+  spamo -verbosity 1 -oc spamo_out_3 -bgfile ./background -keepprimary -primary GCGYMWGACTNDWAA ./3IAA_2_sequences.fa meme_out/meme.xml meme_out/meme.xml streme_out/streme.xml
+Finished invoke:
+  name: spamo3  status: 0  time: 0.270916
+Invoking:
+  fimo --verbosity 1 --oc fimo_out_1 --bgfile ./background --motif CVBSGGTTCGATYCC meme_out/meme.xml ./3IAA_2_sequences.fa
+Finished invoke:
+  name: fimo1  status: 0  time: 0.163937
+Invoking:
+  fimo --verbosity 1 --oc fimo_out_2 --bgfile ./background --motif YTAMCCACTRVRCCA meme_out/meme.xml ./3IAA_2_sequences.fa
+Finished invoke:
+  name: fimo2  status: 0  time: 0.162752
+Invoking:
+  fimo --verbosity 1 --oc fimo_out_3 --bgfile ./background --motif GCGYMWGACTNDWAA meme_out/meme.xml ./3IAA_2_sequences.fa
+Finished invoke:
+  name: fimo3  status: 0  time: 0.162321
+Writing output
+Invoking:
+  meme-chip_html_to_tsv ./meme-chip.html ./summary.tsv "meme-chip -oc . -time 240 -ccut 100 -dna -order 2 -minw 6 -maxw 15 -db db/motif_databases/MOUSE/uniprobe_mouse.meme -db db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme -meme-mod zoops -meme-nmotifs 3 -meme-searchsize 100000 -streme-pvt 0.05 -streme-align center -streme-totallength 4000000 -centrimo-score 5.0 -centrimo-ethresh 10.0 3IAA_2_sequences.fa" 5.5.7 "Wed Jun 19 13\:59\:04 2024 -0700"
+Finished invoke:
+  name: summary  status: 0  time: 0.094275
+Done

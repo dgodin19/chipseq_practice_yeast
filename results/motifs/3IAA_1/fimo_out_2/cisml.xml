@@ -1,0 +1,2450 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!-- Document definition -->
+<!-- http://zlab.bu.edu/~phaverty/SupplementalData/CisML/cisml.dtd -->
+<!DOCTYPE cis-element-search[
+<!ELEMENT cis-element-search (program-name, parameters, (pattern | multi-pattern-scan)*)>
+<!ELEMENT program-name (#PCDATA)>
+<!ELEMENT parameters (
+  pattern-file, 
+  sequence-file, 
+  background-seq-file?,
+  pattern-pvalue-cutoff?,
+  sequence-pvalue-cutoff?,
+  site-pvalue-cutoff?,
+  sequence-filtering,
+  ANY*
+ )>
+<!ELEMENT command-line (#PCDATA)>
+<!ELEMENT pattern-file (#PCDATA)>
+<!ELEMENT sequence-file (#PCDATA)>
+<!ELEMENT background-seq-file (#PCDATA)>
+<!ELEMENT pattern-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-pvalue-cutoff (#PCDATA)>
+<!ELEMENT site-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-filtering EMPTY>
+<!ELEMENT multi-pattern-scan (pattern+, ANY*)>
+<!ELEMENT pattern (scanned-sequence+, ANY*)>
+<!ELEMENT scanned-sequence (matched-element*, ANY*)>
+<!ELEMENT matched-element (sequence)>
+<!ELEMENT sequence (#PCDATA)>
+<!ATTLIST cis-element-search
+xmlns:xsi CDATA #IMPLIED
+xmlns:mem CDATA #IMPLIED
+xsi:schemaLocation CDATA #IMPLIED
+>
+<!ATTLIST sequence-filtering
+on-off CDATA #REQUIRED
+type CDATA #IMPLIED
+>
+<!ATTLIST multi-pattern-scan
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+>
+<!ATTLIST pattern
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+pvalue CDATA #IMPLIED
+score CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST scanned-sequence
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+length CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST matched-element
+start CDATA #REQUIRED
+stop CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+clusterid CDATA #IMPLIED
+>
+
+]>
+<cis-element-search
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://zlab.bu.edu/schema/cisml cisml.xsd"
+  xmlns="http://zlab.bu.edu/schema/cisml"
+  xmlns:mem="http://noble.gs.washington.edu/meme"
+>
+<program-name>fimo</program-name>
+<parameters>
+<command-line>fimo --verbosity 1 --oc fimo_out_2 --bgfile ./background --motif KTGGYBYAGTGGKWA meme_out/meme.xml ./3IAA_1_sequences.fa</command-line>
+<pattern-file>meme_out/meme.xml</pattern-file>
+<sequence-file>./3IAA_1_sequences.fa</sequence-file>
+<site-pvalue-cutoff>0.0001</site-pvalue-cutoff>
+<sequence-filtering on-off="off"/>
+</parameters>
+<pattern accession="KTGGYBYAGTGGKWA" name="MEME-2">
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+<matched-element start="139157" stop="139171" score="19.2432" pvalue="1.86e-07">
+<sequence>GTGGTCTAGTGGTAT</sequence>
+<mem:qvalue>0.000855</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+<matched-element start="166272" stop="166286" score="18.3919" pvalue="4.14e-07">
+<sequence>ATGGCGCAGTTGGTA</sequence>
+<mem:qvalue>0.00114</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+<matched-element start="181146" stop="181160" score="15.1486" pvalue="4.31e-06">
+<sequence>TTGGCCGAGCGGTCT</sequence>
+<mem:qvalue>0.00583</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+<matched-element start="182596" stop="182582" score="21.027" pvalue="2.21e-08">
+<sequence>TTGGCCGAGTGGTTA</sequence>
+<mem:qvalue>0.000305</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+<matched-element start="36403" stop="36417" score="12.7703" pvalue="1.44e-05">
+<sequence>TTAGCTCAGTTGGGA</sequence>
+<mem:qvalue>0.0172</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+<matched-element start="197499" stop="197513" score="18.7297" pvalue="3.06e-07">
+<sequence>TTGGCCCAGTTGGTT</sequence>
+<mem:qvalue>0.000995</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+<matched-element start="266383" stop="266397" score="16.4459" pvalue="1.9e-06">
+<sequence>ATGGCCAAGTTGGTA</sequence>
+<mem:qvalue>0.00361</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+<matched-element start="347608" stop="347622" score="18.4189" pvalue="4.03e-07">
+<sequence>TTGGCCGAGTGGTCT</sequence>
+<mem:qvalue>0.00114</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+<matched-element start="350832" stop="350846" score="16.3378" pvalue="2.04e-06">
+<sequence>ATAGTGTAGTGGTTA</sequence>
+<mem:qvalue>0.00362</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+<matched-element start="405965" stop="405979" score="11.1216" pvalue="2.81e-05">
+<sequence>ATAGTTTAATGGTCA</sequence>
+<mem:qvalue>0.0316</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+<matched-element start="645172" stop="645186" score="8.14865" pvalue="7.39e-05">
+<sequence>ATAGTGTAACGGCTA</sequence>
+<mem:qvalue>0.0741</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+<matched-element start="50809" stop="50795" score="12.4459" pvalue="1.66e-05">
+<sequence>GTGGTGTTGTGGTTT</sequence>
+<mem:qvalue>0.0196</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+<matched-element start="123641" stop="123627" score="13.2568" pvalue="1.15e-05">
+<sequence>GTGGTCTAGAGGTAT</sequence>
+<mem:qvalue>0.0142</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+<matched-element start="142636" stop="142622" score="7.81081" pvalue="8.13e-05">
+<sequence>TTGGCGGAACGGTAC</sequence>
+<mem:qvalue>0.0796</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+<matched-element start="227947" stop="227961" score="20.2027" pvalue="6.54e-08">
+<sequence>ATGGCCGAGTGGTTA</sequence>
+<mem:qvalue>0.000539</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+<matched-element start="295489" stop="295503" score="16.4459" pvalue="1.9e-06">
+<sequence>ATGGCCAAGTTGGTA</sequence>
+<mem:qvalue>0.00361</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+<matched-element start="359582" stop="359596" score="16.2973" pvalue="2.1e-06">
+<sequence>TTAGCTCAGTTGGTA</sequence>
+<mem:qvalue>0.00362</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+<matched-element start="488863" stop="488849" score="13.6216" pvalue="9.68e-06">
+<sequence>ATGGTCCAGTGGTTC</sequence>
+<mem:qvalue>0.0121</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+<matched-element start="519748" stop="519762" score="18.4189" pvalue="4.03e-07">
+<sequence>TTGGCCGAGTGGTCT</sequence>
+<mem:qvalue>0.00114</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+<matched-element start="568887" stop="568901" score="16.4595" pvalue="1.88e-06">
+<sequence>GTGGCGTAATGGCAA</sequence>
+<mem:qvalue>0.00361</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+<matched-element start="992837" stop="992851" score="18.8919" pvalue="2.65e-07">
+<sequence>GTGGTTTAGTGGTAA</sequence>
+<mem:qvalue>0.00098</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+<matched-element start="1017271" stop="1017257" score="10.3243" pvalue="3.74e-05">
+<sequence>GTAGTGTAACGGCTA</sequence>
+<mem:qvalue>0.0408</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+<matched-element start="1075537" stop="1075523" score="11" pvalue="2.94e-05">
+<sequence>ATAGTGTAGCGGCTA</sequence>
+<mem:qvalue>0.0326</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+<matched-element start="1150934" stop="1150920" score="22.3784" pvalue="2.62e-09">
+<sequence>GTGGCCGAGTGGTTA</sequence>
+<mem:qvalue>9.93e-05</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+<matched-element start="1175834" stop="1175848" score="14.2027" pvalue="7.24e-06">
+<sequence>GTAGCTCAGTAGGAA</sequence>
+<mem:qvalue>0.00916</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+<matched-element start="1201755" stop="1201769" score="16.0946" pvalue="2.39e-06">
+<sequence>TTGGCGCAATCGGTA</sequence>
+<mem:qvalue>0.00381</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+<matched-element start="1257072" stop="1257058" score="20" pvalue="8.32e-08">
+<sequence>GTGGTTCAGTGGTTA</sequence>
+<mem:qvalue>0.000539</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+<matched-element start="1461822" stop="1461808" score="15.1486" pvalue="4.31e-06">
+<sequence>TTGGCCGAGCGGTCT</sequence>
+<mem:qvalue>0.00583</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+<matched-element start="61953" stop="61939" score="18.8919" pvalue="2.65e-07">
+<sequence>GTGGTTTAGTGGTAA</sequence>
+<mem:qvalue>0.00098</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+<matched-element start="86609" stop="86623" score="21.027" pvalue="2.21e-08">
+<sequence>TTGGCCGAGTGGTTA</sequence>
+<mem:qvalue>0.000305</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+<matched-element start="100138" stop="100152" score="15.6351" pvalue="3.22e-06">
+<sequence>GTGGCGCAGTGGAAG</sequence>
+<mem:qvalue>0.00488</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+<matched-element start="135490" stop="135476" score="16.0946" pvalue="2.39e-06">
+<sequence>TTGGCGCAATCGGTA</sequence>
+<mem:qvalue>0.00381</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+<matched-element start="138671" stop="138685" score="16.4595" pvalue="1.88e-06">
+<sequence>GTGGCGTAATGGCAA</sequence>
+<mem:qvalue>0.00361</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+<matched-element start="177104" stop="177118" score="8.14865" pvalue="7.39e-05">
+<sequence>ATAGTGTAACGGCTA</sequence>
+<mem:qvalue>0.0741</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+<matched-element start="207362" stop="207376" score="12.1351" pvalue="1.89e-05">
+<sequence>TTAGTATAGTGGTTA</sequence>
+<mem:qvalue>0.0221</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+<matched-element start="312088" stop="312074" score="18.3919" pvalue="4.14e-07">
+<sequence>ATGGCGCAGTTGGTA</sequence>
+<mem:qvalue>0.00114</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+<matched-element start="443268" stop="443254" score="18.7297" pvalue="3.06e-07">
+<sequence>TTGGCCCAGTTGGTT</sequence>
+<mem:qvalue>0.000995</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+<matched-element start="181037" stop="181023" score="18.8919" pvalue="2.65e-07">
+<sequence>GTGGTTTAGTGGTAA</sequence>
+<mem:qvalue>0.00098</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+<matched-element start="191606" stop="191592" score="22.3784" pvalue="2.62e-09">
+<sequence>GTGGCCGAGTGGTTA</sequence>
+<mem:qvalue>9.93e-05</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+<matched-element start="204989" stop="204975" score="20.0541" pvalue="7.93e-08">
+<sequence>GTGGCGTAGTCGGTA</sequence>
+<mem:qvalue>0.000539</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+<matched-element start="210700" stop="210686" score="15.4595" pvalue="3.58e-06">
+<sequence>GTAGCCAAGTTGGTT</sequence>
+<mem:qvalue>0.00532</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+<matched-element start="115493" stop="115507" score="16.2973" pvalue="2.1e-06">
+<sequence>TTAGCTCAGTTGGTA</sequence>
+<mem:qvalue>0.00362</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+<matched-element start="205526" stop="205540" score="15.1486" pvalue="4.31e-06">
+<sequence>TTGGCCGAGCGGTCT</sequence>
+<mem:qvalue>0.00583</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+<matched-element start="226319" stop="226333" score="8.7027" pvalue="6.28e-05">
+<sequence>TTGGTTTAGACGGCA</sequence>
+<mem:qvalue>0.0662</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+<matched-element start="287448" stop="287434" score="16.0676" pvalue="2.44e-06">
+<sequence>GTGGCTCAATGGTAG</sequence>
+<mem:qvalue>0.00381</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+<matched-element start="328588" stop="328602" score="8.14865" pvalue="7.39e-05">
+<sequence>ATAGTGTAACGGCTA</sequence>
+<mem:qvalue>0.0741</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+<matched-element start="405475" stop="405489" score="16.4595" pvalue="1.88e-06">
+<sequence>GTGGCGTAATGGCAA</sequence>
+<mem:qvalue>0.00361</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+<matched-element start="541855" stop="541869" score="8.14865" pvalue="7.39e-05">
+<sequence>ATAGTGTAACGGCTA</sequence>
+<mem:qvalue>0.0741</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+<matched-element start="544641" stop="544627" score="11.1216" pvalue="2.81e-05">
+<sequence>ATAGTTTAATGGTCA</sequence>
+<mem:qvalue>0.0316</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+<matched-element start="561736" stop="561722" score="21.027" pvalue="2.21e-08">
+<sequence>TTGGCCGAGTGGTTA</sequence>
+<mem:qvalue>0.000305</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+<matched-element start="661754" stop="661768" score="15.2432" pvalue="4.07e-06">
+<sequence>TTAGCTTAGTGGTAG</sequence>
+<mem:qvalue>0.00572</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+<matched-element start="700680" stop="700694" score="14.7027" pvalue="5.52e-06">
+<sequence>CTGGCCGAGTGGTCT</sequence>
+<mem:qvalue>0.00735</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+<matched-element start="701041" stop="701027" score="16.2973" pvalue="2.1e-06">
+<sequence>TTAGCTCAGTTGGTA</sequence>
+<mem:qvalue>0.00362</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+<matched-element start="731142" stop="731156" score="15.3649" pvalue="3.8e-06">
+<sequence>ATGGCCAAGTTGGTT</sequence>
+<mem:qvalue>0.00543</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+<matched-element start="736345" stop="736359" score="16.4595" pvalue="1.88e-06">
+<sequence>GTGGCGTAATGGCAA</sequence>
+<mem:qvalue>0.00361</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+<matched-element start="774354" stop="774368" score="20.0541" pvalue="7.93e-08">
+<sequence>GTGGCGTAGTCGGTA</sequence>
+<mem:qvalue>0.000539</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+<matched-element start="779621" stop="779635" score="17.1622" pvalue="1.14e-06">
+<sequence>TTAGTGTAGTGGTTA</sequence>
+<mem:qvalue>0.00265</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+<matched-element start="823487" stop="823501" score="17.9189" pvalue="6.27e-07">
+<sequence>GTGGTCTAGTCGGTT</sequence>
+<mem:qvalue>0.00156</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+<matched-element start="828787" stop="828773" score="16.4595" pvalue="1.88e-06">
+<sequence>GTGGCGTAATGGCAA</sequence>
+<mem:qvalue>0.00361</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+<matched-element start="878808" stop="878794" score="16.0676" pvalue="2.44e-06">
+<sequence>GTGGCTCAATGGTAG</sequence>
+<mem:qvalue>0.00381</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+<matched-element start="931016" stop="931002" score="18.8919" pvalue="2.65e-07">
+<sequence>GTGGTTTAGTGGTAA</sequence>
+<mem:qvalue>0.00098</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+<matched-element start="133100" stop="133086" score="21.027" pvalue="2.21e-08">
+<sequence>TTGGCCGAGTGGTTA</sequence>
+<mem:qvalue>0.000305</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+<matched-element start="237932" stop="237918" score="12.7703" pvalue="1.44e-05">
+<sequence>TTAGCTCAGTTGGGA</sequence>
+<mem:qvalue>0.0172</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+<matched-element start="388988" stop="388974" score="19.2432" pvalue="1.86e-07">
+<sequence>GTGGTCTAGTGGTAT</sequence>
+<mem:qvalue>0.000855</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+<matched-element start="475771" stop="475757" score="11" pvalue="2.94e-05">
+<sequence>ATAGTGTAGCGGCTA</sequence>
+<mem:qvalue>0.0326</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+<matched-element start="248855" stop="248869" score="20.2027" pvalue="6.54e-08">
+<sequence>ATGGCCGAGTGGTTA</sequence>
+<mem:qvalue>0.000539</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+<matched-element start="204740" stop="204754" score="11.1216" pvalue="2.81e-05">
+<sequence>ATAGTTTAATGGTCA</sequence>
+<mem:qvalue>0.0316</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+<matched-element start="233944" stop="233958" score="18.7027" pvalue="3.15e-07">
+<sequence>GTGGCCCAATGGTCA</sequence>
+<mem:qvalue>0.000995</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+<matched-element start="354249" stop="354263" score="15.4595" pvalue="3.58e-06">
+<sequence>GTAGCCAAGTTGGTT</sequence>
+<mem:qvalue>0.00532</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+<matched-element start="355461" stop="355475" score="11.1216" pvalue="2.81e-05">
+<sequence>ATAGTTTAATGGTCA</sequence>
+<mem:qvalue>0.0316</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+<matched-element start="374570" stop="374556" score="16.4595" pvalue="1.88e-06">
+<sequence>GTGGCGTAATGGCAA</sequence>
+<mem:qvalue>0.00361</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+<matched-element start="391108" stop="391094" score="14.2027" pvalue="7.24e-06">
+<sequence>GTAGCTCAGTAGGAA</sequence>
+<mem:qvalue>0.00916</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+<matched-element start="414971" stop="414985" score="16.0946" pvalue="2.39e-06">
+<sequence>TTGGCGCAATCGGTA</sequence>
+<mem:qvalue>0.00381</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+<matched-element start="422942" stop="422956" score="14.2027" pvalue="7.24e-06">
+<sequence>GTAGCTCAGTAGGAA</sequence>
+<mem:qvalue>0.00916</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+<matched-element start="524086" stop="524072" score="21.027" pvalue="2.21e-08">
+<sequence>TTGGCCGAGTGGTTA</sequence>
+<mem:qvalue>0.000305</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+<matched-element start="531833" stop="531847" score="18.8919" pvalue="2.65e-07">
+<sequence>GTGGTTTAGTGGTAA</sequence>
+<mem:qvalue>0.00098</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+<matched-element start="617924" stop="617938" score="19.9459" pvalue="8.89e-08">
+<sequence>TTGGCCGAGTGGTTT</sequence>
+<mem:qvalue>0.000539</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+<matched-element start="38606" stop="38620" score="7.85135" pvalue="8.04e-05">
+<sequence>GTAGTTGTGTTGTTA</sequence>
+<mem:qvalue>0.0792</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+<matched-element start="46799" stop="46785" score="18.3243" pvalue="4.45e-07">
+<sequence>TTGGCCAAGTGGTAA</sequence>
+<mem:qvalue>0.0012</mem:qvalue>
+</matched-element>
+<matched-element start="46792" stop="46806" score="8.12162" pvalue="7.45e-05">
+<sequence>TTGGCCAAAAGGGCT</sequence>
+<mem:qvalue>0.0741</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+<matched-element start="74629" stop="74643" score="15.3649" pvalue="3.8e-06">
+<sequence>ATGGCCAAGTTGGTT</sequence>
+<mem:qvalue>0.00543</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+<matched-element start="141082" stop="141068" score="8.14865" pvalue="7.39e-05">
+<sequence>ATAGTGTAACGGCTA</sequence>
+<mem:qvalue>0.0741</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+<matched-element start="162551" stop="162537" score="16.4595" pvalue="1.88e-06">
+<sequence>GTGGCGTAATGGCAA</sequence>
+<mem:qvalue>0.00361</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+<matched-element start="203004" stop="203018" score="16.0946" pvalue="2.39e-06">
+<sequence>TTGGCGCAATCGGTA</sequence>
+<mem:qvalue>0.00381</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+<matched-element start="302923" stop="302937" score="16.0676" pvalue="2.44e-06">
+<sequence>GTGGCTCAATGGTAG</sequence>
+<mem:qvalue>0.00381</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+<matched-element start="308210" stop="308196" score="17.9189" pvalue="6.27e-07">
+<sequence>GTGGTCTAGTCGGTT</sequence>
+<mem:qvalue>0.00156</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+<matched-element start="379685" stop="379699" score="17.9189" pvalue="6.27e-07">
+<sequence>GTGGTCTAGTCGGTT</sequence>
+<mem:qvalue>0.00156</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+<matched-element start="517993" stop="518007" score="20.0541" pvalue="7.93e-08">
+<sequence>GTGGCGTAGTCGGTA</sequence>
+<mem:qvalue>0.000539</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+<matched-element start="578970" stop="578984" score="16.2973" pvalue="2.1e-06">
+<sequence>TTAGCTCAGTTGGTA</sequence>
+<mem:qvalue>0.00362</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+<matched-element start="92553" stop="92567" score="19.2432" pvalue="1.86e-07">
+<sequence>GTGGTCTAGTGGTAT</sequence>
+<mem:qvalue>0.000855</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+<matched-element start="168018" stop="168004" score="21.027" pvalue="2.21e-08">
+<sequence>TTGGCCGAGTGGTTA</sequence>
+<mem:qvalue>0.000305</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+<matched-element start="214948" stop="214934" score="18.3919" pvalue="4.14e-07">
+<sequence>ATGGCGCAGTTGGTA</sequence>
+<mem:qvalue>0.00114</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+<matched-element start="374360" stop="374374" score="18.7027" pvalue="3.15e-07">
+<sequence>GTGGCCCAATGGTCA</sequence>
+<mem:qvalue>0.000995</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+<matched-element start="472540" stop="472554" score="17.027" pvalue="1.26e-06">
+<sequence>GTAGTGTAGTGGGTG</sequence>
+<mem:qvalue>0.00277</mem:qvalue>
+</matched-element>
+<matched-element start="472512" stop="472526" score="10.1892" pvalue="3.92e-05">
+<sequence>GTAGTTAAGCTGGTA</sequence>
+<mem:qvalue>0.0416</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+<matched-element start="482120" stop="482134" score="17.027" pvalue="1.26e-06">
+<sequence>GTAGTGTAGTGGGTG</sequence>
+<mem:qvalue>0.00277</mem:qvalue>
+</matched-element>
+<matched-element start="482092" stop="482106" score="10.1892" pvalue="3.92e-05">
+<sequence>GTAGTTAAGCTGGTA</sequence>
+<mem:qvalue>0.0416</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+<matched-element start="485772" stop="485786" score="17.027" pvalue="1.26e-06">
+<sequence>GTAGTGTAGTGGGTG</sequence>
+<mem:qvalue>0.00277</mem:qvalue>
+</matched-element>
+<matched-element start="485744" stop="485758" score="10.1892" pvalue="3.92e-05">
+<sequence>GTAGTTAAGCTGGTA</sequence>
+<mem:qvalue>0.0416</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+<matched-element start="489424" stop="489438" score="17.027" pvalue="1.26e-06">
+<sequence>GTAGTGTAGTGGGTG</sequence>
+<mem:qvalue>0.00277</mem:qvalue>
+</matched-element>
+<matched-element start="489396" stop="489410" score="10.1892" pvalue="3.92e-05">
+<sequence>GTAGTTAAGCTGGTA</sequence>
+<mem:qvalue>0.0416</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+<matched-element start="592612" stop="592598" score="19.9459" pvalue="8.89e-08">
+<sequence>TTGGCCGAGTGGTTT</sequence>
+<mem:qvalue>0.000539</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+<matched-element start="656999" stop="656985" score="20.0541" pvalue="7.93e-08">
+<sequence>GTGGCGTAGTCGGTA</sequence>
+<mem:qvalue>0.000539</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+<matched-element start="732095" stop="732109" score="19.9459" pvalue="8.89e-08">
+<sequence>TTGGCCGAGTGGTTT</sequence>
+<mem:qvalue>0.000539</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+<matched-element start="784359" stop="784373" score="22.3784" pvalue="2.62e-09">
+<sequence>GTGGCCGAGTGGTTA</sequence>
+<mem:qvalue>9.93e-05</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+<matched-element start="793923" stop="793937" score="11.1216" pvalue="2.81e-05">
+<sequence>ATAGTTTAATGGTCA</sequence>
+<mem:qvalue>0.0316</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+<matched-element start="797183" stop="797197" score="8.14865" pvalue="7.39e-05">
+<sequence>ATAGTGTAACGGCTA</sequence>
+<mem:qvalue>0.0741</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+<matched-element start="818614" stop="818628" score="10.8378" pvalue="3.12e-05">
+<sequence>CTAGTGCAATGGTTA</sequence>
+<mem:qvalue>0.0343</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+<matched-element start="875381" stop="875395" score="16.2973" pvalue="2.1e-06">
+<sequence>TTAGCTCAGTTGGTA</sequence>
+<mem:qvalue>0.00362</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+<matched-element start="963048" stop="963034" score="18.4189" pvalue="4.03e-07">
+<sequence>TTGGCCGAGTGGTCT</sequence>
+<mem:qvalue>0.00114</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+<matched-element start="183961" stop="183947" score="18.8919" pvalue="2.65e-07">
+<sequence>GTGGTTTAGTGGTAA</sequence>
+<mem:qvalue>0.00098</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+<matched-element start="196163" stop="196149" score="19.2432" pvalue="1.86e-07">
+<sequence>GTGGTCTAGTGGTAT</sequence>
+<mem:qvalue>0.000855</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+<matched-element start="259232" stop="259218" score="21.027" pvalue="2.21e-08">
+<sequence>TTGGCCGAGTGGTTA</sequence>
+<mem:qvalue>0.000305</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+<matched-element start="321212" stop="321198" score="20.0541" pvalue="7.93e-08">
+<sequence>GTGGCGTAGTCGGTA</sequence>
+<mem:qvalue>0.000539</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+<matched-element start="363069" stop="363083" score="12.1351" pvalue="1.89e-05">
+<sequence>TTAGTATAGTGGTTA</sequence>
+<mem:qvalue>0.0221</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+<matched-element start="379401" stop="379387" score="16.0676" pvalue="2.44e-06">
+<sequence>GTGGCTCAATGGTAG</sequence>
+<mem:qvalue>0.00381</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+<matched-element start="504900" stop="504914" score="15.1486" pvalue="4.31e-06">
+<sequence>TTGGCCGAGCGGTCT</sequence>
+<mem:qvalue>0.00583</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+<matched-element start="572948" stop="572934" score="14.2027" pvalue="7.24e-06">
+<sequence>GTAGCTCAGTAGGAA</sequence>
+<mem:qvalue>0.00916</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+<matched-element start="586702" stop="586688" score="17.9189" pvalue="6.27e-07">
+<sequence>GTGGTCTAGTCGGTT</sequence>
+<mem:qvalue>0.00156</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+<matched-element start="626220" stop="626234" score="8.10811" pvalue="7.47e-05">
+<sequence>TTGGTCTAGAAGTAA</sequence>
+<mem:qvalue>0.0741</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+<matched-element start="808310" stop="808296" score="16.3378" pvalue="2.04e-06">
+<sequence>ATAGTGTAGTGGTTA</sequence>
+<mem:qvalue>0.00362</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+<matched-element start="96305" stop="96291" score="17.1622" pvalue="1.14e-06">
+<sequence>TTAGTGTAGTGGTTA</sequence>
+<mem:qvalue>0.00265</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+<matched-element start="104810" stop="104824" score="16.4459" pvalue="1.9e-06">
+<sequence>ATGGCCAAGTTGGTA</sequence>
+<mem:qvalue>0.00361</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+<matched-element start="547099" stop="547113" score="19.2432" pvalue="1.86e-07">
+<sequence>GTGGTCTAGTGGTAT</sequence>
+<mem:qvalue>0.000855</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+<matched-element start="568120" stop="568134" score="19.2432" pvalue="1.86e-07">
+<sequence>GTGGTCTAGTGGTAT</sequence>
+<mem:qvalue>0.000855</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+<matched-element start="602317" stop="602331" score="18.7297" pvalue="3.06e-07">
+<sequence>TTGGCCCAGTTGGTT</sequence>
+<mem:qvalue>0.000995</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+<matched-element start="631910" stop="631896" score="13.2568" pvalue="1.15e-05">
+<sequence>GTGGTCTAGAGGTAT</sequence>
+<mem:qvalue>0.0142</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+<matched-element start="632604" stop="632618" score="15.3649" pvalue="3.8e-06">
+<sequence>ATGGCCAAGTTGGTT</sequence>
+<mem:qvalue>0.00543</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+<matched-element start="111026" stop="111012" score="17.1622" pvalue="1.14e-06">
+<sequence>TTAGTGTAGTGGTTA</sequence>
+<mem:qvalue>0.00265</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+<matched-element start="274678" stop="274692" score="22.3784" pvalue="2.62e-09">
+<sequence>GTGGCCGAGTGGTTA</sequence>
+<mem:qvalue>9.93e-05</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+<matched-element start="282169" stop="282183" score="18.8919" pvalue="2.65e-07">
+<sequence>GTGGTTTAGTGGTAA</sequence>
+<mem:qvalue>0.00098</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+<matched-element start="301102" stop="301116" score="19.2432" pvalue="1.86e-07">
+<sequence>GTGGTCTAGTGGTAT</sequence>
+<mem:qvalue>0.000855</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+<matched-element start="354106" stop="354092" score="16.4459" pvalue="1.9e-06">
+<sequence>ATGGCCAAGTTGGTA</sequence>
+<mem:qvalue>0.00361</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+<matched-element start="464455" stop="464469" score="19.2432" pvalue="1.86e-07">
+<sequence>GTGGTCTAGTGGTAT</sequence>
+<mem:qvalue>0.000855</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+<matched-element start="487444" stop="487458" score="15.3649" pvalue="3.8e-06">
+<sequence>ATGGCCAAGTTGGTT</sequence>
+<mem:qvalue>0.00543</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+<matched-element start="494459" stop="494445" score="17.2568" pvalue="1.06e-06">
+<sequence>GTGGCGGAGTTGGCT</sequence>
+<mem:qvalue>0.0026</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+<matched-element start="594418" stop="594404" score="20" pvalue="8.32e-08">
+<sequence>GTGGTTCAGTGGTTA</sequence>
+<mem:qvalue>0.000539</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+<matched-element start="663878" stop="663864" score="17.9189" pvalue="6.27e-07">
+<sequence>GTGGTCTAGTCGGTT</sequence>
+<mem:qvalue>0.00156</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+<matched-element start="710206" stop="710220" score="15.6351" pvalue="3.22e-06">
+<sequence>GTGGCGCAGTGGAAG</sequence>
+<mem:qvalue>0.00488</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+<matched-element start="854252" stop="854238" score="18.3919" pvalue="4.14e-07">
+<sequence>ATGGCGCAGTTGGTA</sequence>
+<mem:qvalue>0.00114</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+<matched-element start="976426" stop="976440" score="14.2027" pvalue="7.24e-06">
+<sequence>GTAGCTCAGTAGGAA</sequence>
+<mem:qvalue>0.00916</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+<matched-element start="980688" stop="980702" score="15.1216" pvalue="4.37e-06">
+<sequence>GTGGTCTAGTGGAAT</sequence>
+<mem:qvalue>0.00587</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+<matched-element start="56267" stop="56253" score="16.0676" pvalue="2.44e-06">
+<sequence>GTGGCTCAATGGTAG</sequence>
+<mem:qvalue>0.00381</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+<matched-element start="108576" stop="108562" score="8.62162" pvalue="6.44e-05">
+<sequence>GTGGTGATGTGGTCT</sequence>
+<mem:qvalue>0.0673</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+<matched-element start="338912" stop="338898" score="15.6351" pvalue="3.22e-06">
+<sequence>GTGGCGCAGTGGAAG</sequence>
+<mem:qvalue>0.00488</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+<matched-element start="534868" stop="534854" score="14.2027" pvalue="7.24e-06">
+<sequence>GTGGCGAAACGGGTA</sequence>
+<mem:qvalue>0.00916</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+<matched-element start="560282" stop="560268" score="12.7703" pvalue="1.44e-05">
+<sequence>TTAGCTCAGTTGGGA</sequence>
+<mem:qvalue>0.0172</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+<matched-element start="622624" stop="622610" score="12.7703" pvalue="1.44e-05">
+<sequence>TTAGCTCAGTTGGGA</sequence>
+<mem:qvalue>0.0172</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+<matched-element start="689570" stop="689584" score="20.2027" pvalue="6.54e-08">
+<sequence>ATGGCCGAGTGGTTA</sequence>
+<mem:qvalue>0.000539</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+<matched-element start="744289" stop="744303" score="15.2432" pvalue="4.07e-06">
+<sequence>TTAGCTTAGTGGTAG</sequence>
+<mem:qvalue>0.00572</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+<matched-element start="769295" stop="769281" score="16.2973" pvalue="2.1e-06">
+<sequence>TTAGCTCAGTTGGTA</sequence>
+<mem:qvalue>0.00362</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+<matched-element start="819534" stop="819548" score="18.7297" pvalue="3.06e-07">
+<sequence>TTGGCCCAGTTGGTT</sequence>
+<mem:qvalue>0.000995</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+<matched-element start="856907" stop="856921" score="20.0541" pvalue="7.93e-08">
+<sequence>GTGGCGTAGTCGGTA</sequence>
+<mem:qvalue>0.000539</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+<matched-element start="860384" stop="860398" score="18.8919" pvalue="2.65e-07">
+<sequence>GTGGTTTAGTGGTAA</sequence>
+<mem:qvalue>0.00098</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+<matched-element start="880362" stop="880348" score="18.7297" pvalue="3.06e-07">
+<sequence>TTGGCCCAGTTGGTT</sequence>
+<mem:qvalue>0.000995</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+</cis-element-search>

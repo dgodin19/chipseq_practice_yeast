@@ -1,0 +1,12 @@
+MOTIF_INDEX	MOTIF_SOURCE	MOTIF_ID	ALT_ID	CONSENSUS	WIDTH	SITES	E-VALUE	E-VALUE_SOURCE	MOST_SIMILAR_MOTIF_SOURCE	MOST_SIMILAR_MOTIF	URL
+1	MEME	CMCSGGTTCGAHYCC	MEME-1	CMCSGGTTCGAHYCC	15	94	2.9e-206	MEME	db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme	MA0349.1 (OPI1)	http://jaspar2022.genereg.net/matrix/MA0349.1
+2	MEME	KTGGYBYAGTGGKWA	MEME-2	KTGGYBYAGTGGKWA	15	139	5.7e-186	MEME	 	 	 
+3	MEME	CACCCACACCCACA	MEME-3	CACCCACACCCACA	14	19	2.1e-055	MEME	db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme	MA1107.2 (KLF9)	http://jaspar2022.genereg.net/matrix/MA1107.2
+4	db/motif_databases/MOUSE/uniprobe_mouse.meme	UP00053_2	Rxra_secondary	KCRCRWAGKTYRNDHN	16	465	3.9e-004	CENTRIMO	 	 	http://thebrain.bwh.harvard.edu/uniprobe/details2.php?id=00053
+5	STREME	1-GAATCGAACCSGKG	STREME-1	GAATCGAACCSGKG	14	103	1.1e-002	STREME	db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme	MA0349.1 (OPI1)	http://jaspar2022.genereg.net/matrix/MA0349.1
+6	STREME	2-CATCGTK	STREME-2	CATCGTK	7	53	1.7e-002	STREME	 	 	 
+7	STREME	3-WACCACTAVRCCAMN	STREME-3	WACCACTAVRCCAMN	15	105	2.3e-002	STREME	 	 	 
+
+# MEME-ChIP (Motif Analysis of Large Nucleotide Datasets): Version 5.5.7 released on Wed Jun 19 13:59:04 2024 -0700
+# The format of this file is described at https://meme-suite.org/meme//doc/meme-chip-output-format.html
+# meme-chip -oc . -time 240 -ccut 100 -dna -order 2 -minw 6 -maxw 15 -db db/motif_databases/MOUSE/uniprobe_mouse.meme -db db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme -meme-mod zoops -meme-nmotifs 3 -meme-searchsize 100000 -streme-pvt 0.05 -streme-align center -streme-totallength 4000000 -centrimo-score 5.0 -centrimo-ethresh 10.0 3IAA_1_sequences.fa

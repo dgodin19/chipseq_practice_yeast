@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<tomtom version="5.5.7" release="Wed Jun 19 13:59:04 2024 -0700">
+  <model>
+    <command_line>tomtom -verbosity 1 -oc meme_tomtom_out -min-overlap 5 -dist pearson -evalue -thresh 1 -no-ssc meme_out/meme.xml db/motif_databases/MOUSE/uniprobe_mouse.meme db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme</command_line>
+    <distance_measure value="pearson"/>
+    <threshold type="evalue">1</threshold>
+    <alphabet name="DNA" like="dna">
+      <letter id="A" symbol="A" complement="T" name="Adenine" colour="CC0000"/>
+      <letter id="C" symbol="C" complement="G" name="Cytosine" colour="0000CC"/>
+      <letter id="G" symbol="G" complement="C" name="Guanine" colour="FFB300"/>
+      <letter id="T" symbol="T" aliases="U" complement="A" name="Thymine" colour="008000"/>
+      <letter id="N" symbol="N" aliases="X." equals="ACGT" name="Any base"/>
+      <letter id="V" symbol="V" equals="ACG" name="Not T"/>
+      <letter id="H" symbol="H" equals="ACT" name="Not G"/>
+      <letter id="D" symbol="D" equals="AGT" name="Not C"/>
+      <letter id="B" symbol="B" equals="CGT" name="Not A"/>
+      <letter id="M" symbol="M" equals="AC" name="Amino"/>
+      <letter id="R" symbol="R" equals="AG" name="Purine"/>
+      <letter id="W" symbol="W" equals="AT" name="Weak"/>
+      <letter id="S" symbol="S" equals="CG" name="Strong"/>
+      <letter id="Y" symbol="Y" equals="CT" name="Pyrimidine"/>
+      <letter id="K" symbol="K" equals="GT" name="Keto"/>
+    </alphabet>
+    <strands>both</strands>
+    <background from="--query--" A="0.306" C="0.194" G="0.194" T="0.306"/>
+    <host>noble-meme.grid.gs.washington.edu</host>
+    <when>Sun Dec 15 12:26:00 2024</when>
+  </model>
+  <query_dbs>
+    <db source="meme_out/meme.xml" name="meme.xml" loaded="3" excluded="0" last_mod_date="Sun Dec 15 12:25:38 2024"/>
+  </query_dbs>
+  <target_dbs>
+    <db source="db/motif_databases/MOUSE/uniprobe_mouse.meme" name="uniprobe_mouse" loaded="386" excluded="0" last_mod_date="Tue Jan  9 16:02:18 2024"/>
+    <db source="db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme" name="JASPAR2022_CORE_non-redundant_v2" loaded="1956" excluded="0" last_mod_date="Tue Jan  9 16:00:00 2024"/>
+  </target_dbs>
+  <queries>
+    <motif db="0" id="CVBSGGTTCGATYCC" alt="MEME-1" length="15" nsites="175" evalue="2.4e-417">
+      <pos A="0.000174757" C="0.77681" G="0.000110794" T="0.222904"/>
+      <pos A="0.262882" C="0.44557" G="0.234263" T="0.0572851"/>
+      <pos A="0.0344412" C="0.474126" G="0.251396" T="0.240038"/>
+      <pos A="0.102973" C="0.314217" G="0.508391" T="0.0744183"/>
+      <pos A="0.205771" C="0.0286655" G="0.736833" T="0.0287294"/>
+      <pos A="0.000174757" C="0.000110794" G="0.982406" T="0.017308"/>
+      <pos A="0.000174757" C="0.000110794" G="0.000110794" T="0.999604"/>
+      <pos A="0.000174757" C="0.000110794" G="0.000110794" T="0.999604"/>
+      <pos A="0.000174757" C="0.99954" G="0.000110794" T="0.000174757"/>
+      <pos A="0.217194" C="0.000110794" G="0.782521" T="0.000174757"/>
+      <pos A="0.999604" C="0.000110794" G="0.000110794" T="0.000174757"/>
+      <pos A="0.177217" C="0.171442" G="0.188574" T="0.462767"/>
+      <pos A="0.000174757" C="0.405593" G="0.000110794" T="0.594121"/>
+      <pos A="0.000174757" C="0.99954" G="0.000110794" T="0.000174757"/>
+      <pos A="0.0287294" C="0.679722" G="0.0457987" T="0.245748"/>
+    </motif>
+    <motif db="0" id="GCGYMWGACTNDWAA" alt="MEME-3" length="15" nsites="119" evalue="1.2e-150">
+      <pos A="0.000256927" C="0.000162889" G="0.999323" T="0.000256927"/>
+      <pos A="0.000256927" C="0.999323" G="0.000162889" T="0.000256927"/>
+      <pos A="0.000256927" C="0.000162889" G="0.999323" T="0.000256927"/>
+      <pos A="0.126201" C="0.352808" G="0.0589375" T="0.462054"/>
+      <pos A="0.302524" C="0.520733" G="0.0757294" T="0.101012"/>
+      <pos A="0.495639" C="0.126107" G="0.0673334" T="0.31092"/>
+      <pos A="0.000256927" C="0.134504" G="0.864982" T="0.000256927"/>
+      <pos A="0.814699" C="0.00855883" G="0.1429" T="0.0338417"/>
+      <pos A="0.000256927" C="0.814604" G="0.000162889" T="0.184976"/>
+      <pos A="0.000256927" C="0.000162889" G="0.000162889" T="0.999417"/>
+      <pos A="0.226957" C="0.260448" G="0.226863" T="0.285731"/>
+      <pos A="0.31092" C="0.134504" G="0.252052" T="0.302524"/>
+      <pos A="0.411676" C="0.000162889" G="0.0673334" T="0.520827"/>
+      <pos A="0.764321" C="0.000162889" G="0.235259" T="0.000256927"/>
+      <pos A="0.890265" C="0.000162889" G="0.000162889" T="0.109409"/>
+    </motif>
+    <motif db="0" id="YTAMCCACTRVRCCA" alt="MEME-2" length="15" nsites="233" evalue="9.3e-406">
+      <pos A="0.0816413" C="0.364734" G="0.0815932" T="0.472032"/>
+      <pos A="0.291851" C="0.0687238" G="0.00866354" T="0.630762"/>
+      <pos A="0.583572" C="0.0429828" G="0.154523" T="0.218921"/>
+      <pos A="0.510642" C="0.450534" G="0.0344035" T="0.00442143"/>
+      <pos A="0.000131274" C="0.999654" G="8.32262e-05" T="0.000131274"/>
+      <pos A="0.261822" C="0.562074" G="0.154523" T="0.0215811"/>
+      <pos A="0.961092" C="8.32262e-05" G="0.0386937" T="0.000131274"/>
+      <pos A="0.000131274" C="0.793734" G="8.32262e-05" T="0.206052"/>
+      <pos A="0.000131274" C="8.32262e-05" G="8.32262e-05" T="0.999702"/>
+      <pos A="0.407681" C="0.158813" G="0.308964" T="0.124542"/>
+      <pos A="0.270401" C="0.244613" G="0.454824" T="0.0301614"/>
+      <pos A="0.334752" C="8.32262e-05" G="0.665034" T="0.000131274"/>
+      <pos A="0.000131274" C="0.999654" G="8.32262e-05" T="0.000131274"/>
+      <pos A="0.000131274" C="0.690774" G="8.32262e-05" T="0.309012"/>
+      <pos A="0.999702" C="8.32262e-05" G="8.32262e-05" T="0.000131274"/>
+    </motif>
+  </queries>
+  <targets>
+    <motif db="1" id="MA0349.1" alt="OPI1" length="7" nsites="219"
+        url="http://jaspar2022.genereg.net/matrix/MA0349.1">
+      <pos A="0.15532" C="0.497578" G="0.191782" T="0.15532"/>
+      <pos A="0.000139662" C="8.85442e-05" G="0.999632" T="0.000139662"/>
+      <pos A="0.987784" C="0.0119881" G="8.85442e-05" T="0.000139662"/>
+      <pos A="0.999683" C="8.85442e-05" G="8.85442e-05" T="0.000139662"/>
+      <pos A="0.000139662" C="0.999632" G="8.85442e-05" T="0.000139662"/>
+      <pos A="0.000139662" C="0.999632" G="8.85442e-05" T="0.000139662"/>
+      <pos A="0.271905" C="0.267248" G="0.405433" T="0.0554144"/>
+    </motif>
+    <motif db="1" id="MA1532.2" alt="NR1D2" length="15" nsites="65541"
+        url="http://jaspar2022.genereg.net/matrix/MA1532.2">
+      <pos A="0.0122674" C="0.0286393" G="0.0828342" T="0.87626"/>
+      <pos A="0.483311" C="0.0152153" G="0.497326" T="0.00414846"/>
+      <pos A="0.00103547" C="0.00133329" G="0.923373" T="0.0742584"/>
+      <pos A="0.00175046" C="0.000327295" G="0.997317" T="0.000605466"/>
+      <pos A="0.000440466" C="0.00755028" G="0.0681392" T="0.92387"/>
+      <pos A="0.000425466" C="0.495125" G="0.000213296" T="0.504237"/>
+      <pos A="0.994918" C="2.95998e-07" G="3.32959e-05" T="0.00504946"/>
+      <pos A="0.0601074" C="0.117712" G="0.777077" T="0.0451034"/>
+      <pos A="0.00108147" C="0.00751728" G="0.0156313" T="0.97577"/>
+      <pos A="0.520535" C="0.00509229" G="0.4729" T="0.00147346"/>
+      <pos A="0.000891466" C="0.000354295" G="0.81341" T="0.185344"/>
+      <pos A="0.00426346" C="0.00131829" G="0.993296" T="0.00112347"/>
+      <pos A="0.0233774" C="0.0354352" G="0.0783092" T="0.862879"/>
+      <pos A="0.000645466" C="0.87338" G="0.0142003" T="0.111774"/>
+      <pos A="0.850588" C="0.000662295" G="0.14066" T="0.00809045"/>
+    </motif>
+    <motif db="1" id="MA1971.1" alt="ZBED2" length="14" nsites="1297"
+        url="http://jaspar2022.genereg.net/matrix/MA1971.1">
+      <pos A="0.235934" C="0.27139" G="0.307624" T="0.185051"/>
+      <pos A="0.282192" C="0.283725" G="0.254428" T="0.179655"/>
+      <pos A="0.387041" C="0.318417" G="0.168853" T="0.125689"/>
+      <pos A="0.445633" C="0.281412" G="0.168853" T="0.104102"/>
+      <pos A="0.0324031" C="0.921301" G="0.0323945" T="0.0139005"/>
+      <pos A="0.0146715" C="0.0162047" G="0.965246" T="0.00387829"/>
+      <pos A="0.961398" C="0.0100372" G="0.0223722" T="0.00619112"/>
+      <pos A="0.974505" C="0.0100372" G="0.00618248" T="0.00927488"/>
+      <pos A="0.871968" C="0.0724844" G="0.0316235" T="0.0239227"/>
+      <pos A="0.0131296" C="0.938262" G="0.0331654" T="0.0154424"/>
+      <pos A="0.0578451" C="0.74167" G="0.0362492" T="0.164236"/>
+      <pos A="0.29684" C="0.26368" G="0.262909" T="0.176571"/>
+      <pos A="0.252124" C="0.279099" G="0.305311" T="0.163465"/>
+      <pos A="0.272941" C="0.260596" G="0.322272" T="0.144191"/>
+    </motif>
+  </targets>
+  <matches>
+    <query idx="0">
+      <target idx="0" rc="y" off="-3" pv="1.70e-04" ev="3.98e-01" qv="6.50e-01"/>
+      <target idx="2" rc="y" off="0" pv="2.78e-04" ev="6.50e-01" qv="6.50e-01"/>
+    </query>
+    <query idx="2">
+      <target idx="1" rc="y" off="0" pv="1.34e-04" ev="3.14e-01" qv="6.29e-01"/>
+    </query>
+  </matches>
+  <runtime cycles="16622182" seconds="16.622"/>
+</tomtom>

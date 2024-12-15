@@ -1,0 +1,13 @@
+prim_db	prim_id	prim_alt	prim_cons	sec_db	sec_id	sec_alt	sec_cons	trim_left	trim_right	red_db	red_id	red_alt	E-value	gap	orient	count	total	adj_p-value	p-value
+meme.xml	CTTTGACCCAGGTAG	MEME-2	CTTTGACCCAGGTAG	meme.xml	CCGTATAATCAACGG	MEME-3	CCGTATAATCAACGG	0	0	.	.	.	8.00e+00	0	0	0	0	1.00e+00	1.00e+00
+meme.xml	CTTTGACCCAGGTAG	MEME-2	CTTTGACCCAGGTAG	meme.xml	CTTTGACCCAGGTAG	MEME-2	CTTTGACCCAGGTAG	0	0	.	.	.	8.00e+00	0	0	0	0	1.00e+00	1.00e+00
+meme.xml	CTTTGACCCAGGTAG	MEME-2	CTTTGACCCAGGTAG	meme.xml	WGAAAAARAAAARAA	MEME-1	WGAAAAARAAAARAA	0	0	.	.	.	8.00e+00	0	0	0	0	1.00e+00	1.00e+00
+meme.xml	CTTTGACCCAGGTAG	MEME-2	CTTTGACCCAGGTAG	streme.xml	1-CTCATCKCWT	STREME-1	CTCATCKCWT	0	0	.	.	.	8.00e+00	0	0	0	0	1.00e+00	1.00e+00
+meme.xml	CTTTGACCCAGGTAG	MEME-2	CTTTGACCCAGGTAG	streme.xml	2-TATATA	STREME-2	TATATA	0	0	.	.	.	8.00e+00	0	0	0	0	1.00e+00	1.00e+00
+meme.xml	CTTTGACCCAGGTAG	MEME-2	CTTTGACCCAGGTAG	streme.xml	3-AATGGA	STREME-3	AATGGA	0	0	.	.	.	8.00e+00	0	0	0	0	1.00e+00	1.00e+00
+meme.xml	CTTTGACCCAGGTAG	MEME-2	CTTTGACCCAGGTAG	streme.xml	4-CCGTTGATTATA	STREME-4	CCGTTGATTATA	0	0	.	.	.	8.00e+00	0	0	0	0	1.00e+00	1.00e+00
+meme.xml	CTTTGACCCAGGTAG	MEME-2	CTTTGACCCAGGTAG	streme.xml	5-AGACATCCTAT	STREME-5	AGACATCCTAT	0	0	.	.	.	8.00e+00	0	0	0	0	1.00e+00	1.00e+00
+
+# SpaMo (Spaced Motif Analysis Tool): Version 5.5.7 compiled on Aug 29 2024 at 17:50:24
+# The format of this file is described at https://meme-suite.org/meme/doc/spamo-output-format.html.
+# spamo -verbosity 1 -oc spamo_out_2 -bgfile ./background -keepprimary -primary CTTTGACCCAGGTAG ./3IAA_3_sequences.fa meme_out/meme.xml meme_out/meme.xml streme_out/streme.xml

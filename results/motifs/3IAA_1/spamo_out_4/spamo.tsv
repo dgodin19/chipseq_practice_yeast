@@ -1,0 +1,15 @@
+prim_db	prim_id	prim_alt	prim_cons	sec_db	sec_id	sec_alt	sec_cons	trim_left	trim_right	red_db	red_id	red_alt	E-value	gap	orient	count	total	adj_p-value	p-value
+streme.xml	2-CATCGTK	STREME-2	CATCGTK	meme.xml	CACCCACACCCACA	MEME-3	CACCCACACCCACA	0	0	.	.	.	1.00e+01	0	0	0	0	1.00e+00	1.00e+00
+streme.xml	2-CATCGTK	STREME-2	CATCGTK	meme.xml	CMCSGGTTCGAHYCC	MEME-1	CMCSGGTTCGAHYCC	0	0	.	.	.	1.00e+01	0	0	0	0	1.00e+00	1.00e+00
+streme.xml	2-CATCGTK	STREME-2	CATCGTK	meme.xml	KTGGYBYAGTGGKWA	MEME-2	KTGGYBYAGTGGKWA	0	0	.	.	.	1.00e+01	0	0	0	0	1.00e+00	1.00e+00
+streme.xml	2-CATCGTK	STREME-2	CATCGTK	streme.xml	1-GAATCGAACCSGKG	STREME-1	GAATCGAACCSGKG	0	0	.	.	.	1.00e+01	0	0	0	0	1.00e+00	1.00e+00
+streme.xml	2-CATCGTK	STREME-2	CATCGTK	streme.xml	2-CATCGTK	STREME-2	CATCGTK	0	0	.	.	.	1.00e+01	0	0	0	0	1.00e+00	1.00e+00
+streme.xml	2-CATCGTK	STREME-2	CATCGTK	streme.xml	3-WACCACTAVRCCAMN	STREME-3	WACCACTAVRCCAMN	0	1	.	.	.	1.00e+01	0	0	0	0	1.00e+00	1.00e+00
+streme.xml	2-CATCGTK	STREME-2	CATCGTK	streme.xml	4-ATGCGAGAG	STREME-4	ATGCGAGAG	0	0	.	.	.	1.00e+01	0	0	0	0	1.00e+00	1.00e+00
+streme.xml	2-CATCGTK	STREME-2	CATCGTK	streme.xml	5-CCAACTGAGCT	STREME-5	CCAACTGAGCT	0	0	.	.	.	1.00e+01	0	0	0	0	1.00e+00	1.00e+00
+streme.xml	2-CATCGTK	STREME-2	CATCGTK	streme.xml	6-ATATATATAT	STREME-6	ATATATATAT	0	0	.	.	.	1.00e+01	0	0	0	0	1.00e+00	1.00e+00
+streme.xml	2-CATCGTK	STREME-2	CATCGTK	streme.xml	7-AAGGCGMMAGAYT	STREME-7	AAGGCGMMAGAYT	0	0	.	.	.	1.00e+01	0	0	0	0	1.00e+00	1.00e+00
+
+# SpaMo (Spaced Motif Analysis Tool): Version 5.5.7 compiled on Aug 29 2024 at 17:50:24
+# The format of this file is described at https://meme-suite.org/meme/doc/spamo-output-format.html.
+# spamo -verbosity 1 -oc spamo_out_4 -bgfile ./background -keepprimary -primary 2-CATCGTK ./3IAA_1_sequences.fa streme_out/streme.xml meme_out/meme.xml streme_out/streme.xml

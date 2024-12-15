@@ -1,0 +1,2 @@
+Skipping sequence NC_001134.8:813105-813184 as its length (79) does not match the expected length (101).
+Skipping sequence NC_001142.9:745655-745751 as its length (96) does not match the expected length (101).

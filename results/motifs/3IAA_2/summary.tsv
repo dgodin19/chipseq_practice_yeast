@@ -1,0 +1,25 @@
+MOTIF_INDEX	MOTIF_SOURCE	MOTIF_ID	ALT_ID	CONSENSUS	WIDTH	SITES	E-VALUE	E-VALUE_SOURCE	MOST_SIMILAR_MOTIF_SOURCE	MOST_SIMILAR_MOTIF	URL
+1	MEME	CVBSGGTTCGATYCC	MEME-1	CVBSGGTTCGATYCC	15	175	2.4e-417	MEME	db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme	MA0349.1 (OPI1)	http://jaspar2022.genereg.net/matrix/MA0349.1
+2	MEME	YTAMCCACTRVRCCA	MEME-2	YTAMCCACTRVRCCA	15	233	9.3e-406	MEME	db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme	MA1532.2 (NR1D2)	http://jaspar2022.genereg.net/matrix/MA1532.2
+3	MEME	GCGYMWGACTNDWAA	MEME-3	GCGYMWGACTNDWAA	15	119	1.2e-150	MEME	 	 	 
+4	STREME	4-AAGGCGYMWGACTN	STREME-4	AAGGCGYMWGACTN	14	93	3.0e-010	STREME	 	 	 
+5	STREME	1-ACCACTAVRCYA	STREME-1	ACCACTAVRCYA	12	145	8.8e-004	STREME	 	 	 
+6	db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme	MA1426.1	MYB124	NNACGCGCCN	10	322	9.1e-004	CENTRIMO	 	 	http://jaspar2022.genereg.net/matrix/MA1426.1
+7	STREME	3-CCAACTDGGCYAH	STREME-3	CCAACTDGGCYAH	13	109	2.0e-003	STREME	 	 	 
+8	db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme	MA1414.1	E2FA	WVGCGCCAHN	10	210	3.1e-003	CENTRIMO	 	 	http://jaspar2022.genereg.net/matrix/MA1414.1
+9	db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme	MA1496.1	HOXA4	RTMATTAV	8	391	4.7e-003	CENTRIMO	 	 	http://jaspar2022.genereg.net/matrix/MA1496.1
+10	STREME	2-GRATCGAACCSSKGA	STREME-2	GRATCGAACCSSKGA	15	174	5.1e-003	STREME	db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme	MA0349.1 (OPI1)	http://jaspar2022.genereg.net/matrix/MA0349.1
+11	db/motif_databases/MOUSE/uniprobe_mouse.meme	UP00003_2	E2F3_secondary	NNYWYGGCGCCAMDVBN	17	140	5.3e-003	CENTRIMO	 	 	http://thebrain.bwh.harvard.edu/uniprobe/details2.php?id=00003
+12	db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme	MA1497.1	HOXA6	BGYMATTANN	10	400	6.1e-003	CENTRIMO	 	 	http://jaspar2022.genereg.net/matrix/MA1497.1
+13	db/motif_databases/MOUSE/uniprobe_mouse.meme	UP00001_2	E2F2_secondary	NNNWYGGCGCCAANNKB	17	159	7.7e-003	CENTRIMO	 	 	http://thebrain.bwh.harvard.edu/uniprobe/details2.php?id=00001
+14	db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme	MA1500.1	HOXB6	BTAATKRC	8	393	8.3e-003	CENTRIMO	 	 	http://jaspar2022.genereg.net/matrix/MA1500.1
+15	db/motif_databases/MOUSE/uniprobe_mouse.meme	UP00089_1	Tcf1_primary	NHTHRGTTAACTAADNN	17	218	8.7e-003	CENTRIMO	 	 	http://thebrain.bwh.harvard.edu/uniprobe/details2.php?id=00089
+16	db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme	MA0232.1	lbl	TAATKA	6	398	1.1e-002	CENTRIMO	 	 	http://jaspar2022.genereg.net/matrix/MA0232.1
+17	db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme	MA1051.1	RAP2-3	GCGCCGCC	8	149	1.2e-002	CENTRIMO	 	 	http://jaspar2022.genereg.net/matrix/MA1051.1
+18	db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme	MA1831.1	Zm00001d031796	SGACGGCGACGV	12	131	2.4e-002	CENTRIMO	 	 	http://jaspar2022.genereg.net/matrix/MA1831.1
+19	db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme	MA0213.1	brk	SYGGCGCY	8	137	4.4e-002	CENTRIMO	 	 	http://jaspar2022.genereg.net/matrix/MA0213.1
+20	db/motif_databases/MOUSE/uniprobe_mouse.meme	UP00103_1	Jundm2_primary	NSGATGACGTCAYCRH	16	69	4.7e-002	CENTRIMO	 	 	http://thebrain.bwh.harvard.edu/uniprobe/details2.php?id=00103
+
+# MEME-ChIP (Motif Analysis of Large Nucleotide Datasets): Version 5.5.7 released on Wed Jun 19 13:59:04 2024 -0700
+# The format of this file is described at https://meme-suite.org/meme//doc/meme-chip-output-format.html
+# meme-chip -oc . -time 240 -ccut 100 -dna -order 2 -minw 6 -maxw 15 -db db/motif_databases/MOUSE/uniprobe_mouse.meme -db db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme -meme-mod zoops -meme-nmotifs 3 -meme-searchsize 100000 -streme-pvt 0.05 -streme-align center -streme-totallength 4000000 -centrimo-score 5.0 -centrimo-ethresh 10.0 3IAA_2_sequences.fa
