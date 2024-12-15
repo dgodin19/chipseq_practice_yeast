@@ -1,0 +1,15 @@
+MOTIF_INDEX	MOTIF_SOURCE	MOTIF_ID	ALT_ID	CONSENSUS	WIDTH	SITES	E-VALUE	E-VALUE_SOURCE	MOST_SIMILAR_MOTIF_SOURCE	MOST_SIMILAR_MOTIF	URL
+1	MEME	AAAARRAARAARARA	MEME-1	AAAARRAARAARARA	15	706	4.2e-088	MEME	db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme	MA1274.1 (DOF3.6)	http://jaspar2022.genereg.net/matrix/MA1274.1
+2	MEME	GGAAKTGARAGGGAG	MEME-2	GGAAKTGARAGGGAG	15	48	4.8e-021	MEME	db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme	MA0205.2 (Trl)	http://jaspar2022.genereg.net/matrix/MA0205.2
+3	MEME	GGATGTCTTTGACCC	MEME-3	GGATGTCTTTGACCC	15	25	1.6e-014	MEME	db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme	MA1147.1 (NR4A2::RXRA)	http://jaspar2022.genereg.net/matrix/MA1147.1
+4	db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme	MA1428.1	TCP8	BGGSCCCAC	9	864	1.5e-003	CENTRIMO	 	 	http://jaspar2022.genereg.net/matrix/MA1428.1
+5	db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme	MA1919.1	Tbox-a	NNNNNNRGGTGTGAANDNNNNN	22	812	5.9e-003	CENTRIMO	 	 	http://jaspar2022.genereg.net/matrix/MA1919.1
+6	STREME	1-GCGATGA	STREME-1	GCGATGA	7	443	8.1e-003	STREME	db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme	MA0350.1 (TOD6)	http://jaspar2022.genereg.net/matrix/MA0350.1
+7	STREME	2-CCCTTTT	STREME-2	CCCTTTT	7	816	9.5e-003	STREME	db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme	MA0657.1 (KLF13)	http://jaspar2022.genereg.net/matrix/MA0657.1
+8	db/motif_databases/MOUSE/uniprobe_mouse.meme	UP00388_1	Six6_2267.4	DATRGGGTATCAHNWHT	17	225	1.5e-002	CENTRIMO	 	 	http://thebrain.bwh.harvard.edu/uniprobe/details2.php?id=00388
+9	db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme	MA1116.1	RBPJ	BVTGGGAANN	10	508	2.3e-002	CENTRIMO	 	 	http://jaspar2022.genereg.net/matrix/MA1116.1
+10	STREME	3-ATATATAAA	STREME-3	ATATATAAA	9	318	3.9e-002	STREME	db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme	MA0379.1 (MOT2)	http://jaspar2022.genereg.net/matrix/MA0379.1
+
+# MEME-ChIP (Motif Analysis of Large Nucleotide Datasets): Version 5.5.7 released on Wed Jun 19 13:59:04 2024 -0700
+# The format of this file is described at https://meme-suite.org/meme//doc/meme-chip-output-format.html
+# meme-chip -oc . -time 240 -ccut 100 -dna -order 2 -minw 6 -maxw 15 -db db/motif_databases/MOUSE/uniprobe_mouse.meme -db db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme -meme-mod zoops -meme-nmotifs 3 -meme-searchsize 100000 -streme-pvt 0.05 -streme-align center -streme-totallength 4000000 -centrimo-score 5.0 -centrimo-ethresh 10.0 DMSO_3_sequences.fa

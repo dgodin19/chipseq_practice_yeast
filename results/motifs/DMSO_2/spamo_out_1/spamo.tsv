@@ -1,0 +1,14 @@
+prim_db	prim_id	prim_alt	prim_cons	sec_db	sec_id	sec_alt	sec_cons	trim_left	trim_right	red_db	red_id	red_alt	E-value	gap	orient	count	total	adj_p-value	p-value
+meme.xml	TTTTYTTSYTYTTYT	MEME-1	TTTTYTTSYTYTTYT	meme.xml	AAGACATCCTATC	MEME-3	AAGACATCCTATC	0	0	.	.	.	9.00e+00	0	0	0	0	1.00e+00	1.00e+00
+meme.xml	TTTTYTTSYTYTTYT	MEME-1	TTTTYTTSYTYTTYT	meme.xml	TCCTACCTACCTGGG	MEME-2	TCCTACCTACCTGGG	0	0	.	.	.	9.00e+00	0	0	0	0	1.00e+00	1.00e+00
+meme.xml	TTTTYTTSYTYTTYT	MEME-1	TTTTYTTSYTYTTYT	meme.xml	TTTTYTTSYTYTTYT	MEME-1	TTTTYTTSYTYTTYT	0	0	.	.	.	9.00e+00	0	0	0	0	1.00e+00	1.00e+00
+meme.xml	TTTTYTTSYTYTTYT	MEME-1	TTTTYTTSYTYTTYT	streme.xml	1-GGAAAGAAA	STREME-1	GGAAAGAAA	0	0	.	.	.	9.00e+00	0	0	0	0	1.00e+00	1.00e+00
+meme.xml	TTTTYTTSYTYTTYT	MEME-1	TTTTYTTSYTYTTYT	streme.xml	2-GMGATGAGMT	STREME-2	GMGATGAGMT	0	0	.	.	.	9.00e+00	0	0	0	0	1.00e+00	1.00e+00
+meme.xml	TTTTYTTSYTYTTYT	MEME-1	TTTTYTTSYTYTTYT	streme.xml	3-CCTCGAGG	STREME-3	CCTCGAGG	0	0	.	.	.	9.00e+00	0	0	0	0	1.00e+00	1.00e+00
+meme.xml	TTTTYTTSYTYTTYT	MEME-1	TTTTYTTSYTYTTYT	streme.xml	4-CMATKG	STREME-4	CMATKG	0	0	.	.	.	9.00e+00	0	0	0	0	1.00e+00	1.00e+00
+meme.xml	TTTTYTTSYTYTTYT	MEME-1	TTTTYTTSYTYTTYT	streme.xml	5-ACGGATAGGATGTCT	STREME-5	ACGGATAGGATGTCT	0	0	.	.	.	9.00e+00	0	0	0	0	1.00e+00	1.00e+00
+meme.xml	TTTTYTTSYTYTTYT	MEME-1	TTTTYTTSYTYTTYT	streme.xml	6-ATATAAAMG	STREME-6	ATATAAAMG	0	0	.	.	.	9.00e+00	0	0	0	0	1.00e+00	1.00e+00
+
+# SpaMo (Spaced Motif Analysis Tool): Version 5.5.7 compiled on Aug 29 2024 at 17:50:24
+# The format of this file is described at https://meme-suite.org/meme/doc/spamo-output-format.html.
+# spamo -verbosity 1 -oc spamo_out_1 -bgfile ./background -keepprimary -primary TTTTYTTSYTYTTYT ./DMSO_2_sequences.fa meme_out/meme.xml meme_out/meme.xml streme_out/streme.xml

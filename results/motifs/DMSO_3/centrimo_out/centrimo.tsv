@@ -1,0 +1,52 @@
+db_index	motif_id	motif_alt_id	consensus	E-value	adj_p-value	log_adj_p-value	bin_location	bin_width	total_width	sites_in_bin	total_sites	p_success	p-value	mult_tests
+   4	MA1428.1	TCP8	BGGSCCCAC	1.5e-3	   6.2e-7	         -14.30	         0.0	      3.0	         93	          62	        864	  0.03226	1.3e-8	        46
+   4	MA1919.1	Tbox-a	NNNNNNRGGTGTGAANDNNNNN	5.9e-3	   2.5e-6	         -12.90	         0.0	     26.0	         80	         336	        812	  0.32500	6.4e-8	        39
+   3	UP00388_1	Six6_2267.4	DATRGGGTATCAHNWHT	1.5e-2	   6.2e-6	         -11.99	         0.0	      3.0	         85	          26	        225	  0.03529	1.5e-7	        42
+   4	MA1116.1	RBPJ	BVTGGGAANN	2.3e-2	   9.7e-6	         -11.54	         0.0	      6.0	         92	          65	        508	  0.06522	2.2e-7	        45
+   3	UP00388_2	Six6_2267.5	DWWRGGGTATCAWNWHT	7.6e-2	   3.2e-5	         -10.34	         0.0	      3.0	         85	          32	        342	  0.03529	7.7e-7	        42
+   4	MA1648.1	TCF12	NNCACCTGCNN	1.4e-1	   6.1e-5	          -9.70	         0.0	     21.0	         91	         220	        714	  0.23077	1.4e-6	        45
+   4	MA1433.1	msn-1	VCCCCTDA	1.7e-1	   7.1e-5	          -9.55	         0.0	     48.0	         94	         446	        748	  0.51064	1.6e-6	        46
+   3	UP00035_2	Hic1_secondary	DSDDRTGCCCAWNNNN	1.9e-1	   8.2e-5	          -9.41	         0.0	      2.0	         86	          32	        537	  0.02326	2.0e-6	        42
+   4	MA1912.1	Six3/6	NNNNWWNTGATACNNNNNNN	2.5e-1	   1.1e-4	          -9.15	         0.0	      2.0	         82	          45	        862	  0.02439	2.7e-6	        40
+   4	MA0522.3	TCF3	NVCACCTGCNN	2.9e-1	   1.3e-4	          -8.99	         0.0	     25.0	         91	         215	        596	  0.27473	2.8e-6	        45
+   3	UP00036_2	Myf6_secondary	VNNRACAGVCGCRCC	3.0e-1	   1.3e-4	          -8.98	         0.0	     11.0	         87	         203	       1175	  0.12644	2.9e-6	        43
+   4	MA1064.1	TCP2	RTGGKMCCAY	5.3e-1	   2.2e-4	          -8.41	         0.0	      4.0	         92	          44	        485	  0.04348	5.0e-6	        45
+   4	MA0807.1	TBX5	AGGTGTKA	6.1e-1	   2.6e-4	          -8.26	         0.0	     10.0	         94	         174	       1177	  0.10638	5.6e-6	        46
+   4	MA0306.1	GIS1	HCCCCTWWN	6.5e-1	   2.8e-4	          -8.19	         0.0	     49.0	         93	         367	        595	  0.52688	6.0e-6	        46
+   4	MA1050.1	OsI_08196	GGGCCCAC	6.9e-1	   2.9e-4	          -8.14	         0.0	     14.0	         94	          63	        244	  0.14894	6.3e-6	        46
+   3	UP00008_1	Six6_primary	DWWRGGGTATCAHDWHT	7.9e-1	   3.3e-4	          -8.00	         0.0	      3.0	         85	          26	        278	  0.03529	8.0e-6	        42
+   3	UP00197_1	Hoxc9_2367.2	NDVGGTCATTAAHYDB	8.9e-1	   3.8e-4	          -7.88	         0.0	     82.0	         86	         548	        555	  0.95349	9.0e-6	        42
+   3	UP00013_2	Gabpa_secondary	CYNKYWTCCSMYBNVN	1.0e0	   4.4e-4	          -7.74	         0.0	     28.0	         86	         547	       1443	  0.32558	1.0e-5	        42
+   4	MA1565.1	TBX18	DRAGGTGTGAAR	1.0e0	   4.4e-4	          -7.73	         0.0	     28.0	         90	         292	        760	  0.31111	1.0e-5	        44
+   3	UP00195_1	Six3_1732.2	DATRGGGTATCAYNWNT	1.1e0	   4.7e-4	          -7.66	         0.0	      3.0	         85	          24	        250	  0.03529	1.1e-5	        42
+   4	MA1620.1	Ptf1A	NVACACCTGTNN	1.2e0	   5.0e-4	          -7.60	         0.0	     22.0	         90	         173	        529	  0.24444	1.1e-5	        44
+   4	MA0624.2	Nfatc1	NVATGGAAAAWN	1.2e0	   5.0e-4	          -7.60	         0.0	      2.0	         90	          46	       1017	  0.02222	1.1e-5	        44
+   4	MA1937.1	ERF::HOXB13	VSCGGAARYNRTWAAN	1.3e0	   5.6e-4	          -7.49	         0.0	     12.0	         86	         130	        649	  0.13953	1.3e-5	        42
+   4	MA0355.1	PHD1	NSMTGCABVN	1.4e0	   5.7e-4	          -7.46	         0.0	     14.0	         92	         165	        787	  0.15217	1.3e-5	        45
+   4	MA1914.1	Snail	NNNNNHRCACCTGYHNNNNN	1.7e0	   7.3e-4	          -7.23	         0.0	     24.0	         82	         217	        581	  0.29268	1.8e-5	        40
+   3	UP00096_2	Sox13_secondary	DWDHTGGGTGGGNAHHK	1.7e0	   7.4e-4	          -7.21	         0.0	     11.0	         85	         204	       1188	  0.12941	1.8e-5	        42
+   4	MA1846.1	Brachyury	NDCRNNNAGGTGTGAWWWNNNN	1.8e0	   7.5e-4	          -7.19	         0.0	     10.0	         80	         144	        821	  0.12500	1.9e-5	        39
+   4	MA1163.2	PHL11	WDAGAATATTCTHW	2.5e0	   1.0e-3	          -6.87	         0.0	     62.0	         88	         194	        236	  0.70455	2.4e-5	        43
+   4	MA0002.2	Runx1	BBYTGTGGTTT	2.9e0	   1.2e-3	          -6.69	         0.0	     11.0	         91	         140	        827	  0.12088	2.8e-5	        45
+   4	MA1030.1	P0510F09.23	WRMCCTARNN	3.1e0	   1.3e-3	          -6.64	         0.0	     36.0	         92	         451	        991	  0.39130	2.9e-5	        45
+   4	MA1051.1	RAP2-3	GCGCCGCC	3.4e0	   1.5e-3	          -6.53	         0.0	      8.0	         94	          65	        451	  0.08511	3.2e-5	        46
+   3	UP00085_1	Sfpi1_primary	NDAWGVGGAAGTDN	3.7e0	   1.6e-3	          -6.47	         0.0	      4.0	         88	          77	       1048	  0.04545	3.6e-5	        43
+   4	MA0564.1	ABI3	CTGCATGCA	3.8e0	   1.6e-3	          -6.43	         0.0	     27.0	         93	         172	        455	  0.29032	3.5e-5	        46
+   3	UP00199_1	Six4_2860.1	AKRHATGACACCNHBNV	4.3e0	   1.8e-3	          -6.32	         0.0	      7.0	         85	          43	        274	  0.08235	4.3e-5	        42
+   4	MA1063.1	TCP19	TGGGSCCCAC	4.7e0	   2.0e-3	          -6.22	         0.0	      6.0	         92	          64	        585	  0.06522	4.4e-5	        45
+   3	UP00102_2	Zic1_secondary	YHDCRCAGCAGGMVD	5.9e0	   2.5e-3	          -5.99	         0.0	     21.0	         87	         139	        428	  0.24138	5.8e-5	        43
+   4	MA0941.1	ABF2	NNNDACACGTGDN	6.5e0	   2.8e-3	          -5.90	         0.0	     17.0	         89	         129	        491	  0.19101	6.3e-5	        44
+   4	MA1808.1	GLYMA-06G314400	CACGTGGCANN	6.7e0	   2.8e-3	          -5.87	         0.0	     17.0	         91	         170	        690	  0.18681	6.3e-5	        45
+   3	UP00057_2	Zic2_secondary	NHDCVCAGCAKGNRW	6.7e0	   2.8e-3	          -5.86	         0.0	     19.0	         87	         126	        421	  0.21839	6.6e-5	        43
+   4	MA0540.1	dpy-27	TBTCCCTKCGCGAWDR	7.3e0	   3.1e-3	          -5.78	         0.0	     28.0	         86	          40	         73	  0.32558	7.4e-5	        42
+   4	MA1266.1	RAP2-11	CYDYCDYCGCCGGCN	7.8e0	   3.3e-3	          -5.71	         0.0	      5.0	         87	          22	        154	  0.05747	7.7e-5	        43
+   4	MA0631.1	Six3	DATRGGGTATCAYNWNT	7.9e0	   3.3e-3	          -5.70	         0.0	      5.0	         85	          28	        216	  0.05882	8.0e-5	        42
+   4	MA0170.1	C15	TTAAWKR	7.9e0	   3.4e-3	          -5.69	         0.0	     51.0	         95	         729	       1234	  0.53684	7.2e-5	        47
+   4	MA0652.1	IRF8	HCGAAACCGAAACT	8.4e0	   3.6e-3	          -5.64	         0.0	     28.0	         88	          10	         11	  0.31818	8.3e-5	        43
+   4	MA0750.2	ZBTB7A	NVCCGGAAGTGSV	8.7e0	   3.7e-3	          -5.60	         0.0	     29.0	         89	         213	        526	  0.32584	8.4e-5	        44
+   3	UP00240_1	Cdx1_2245.1	WDVGGTMATAAAAYKH	9.9e0	   4.2e-3	          -5.48	         0.0	     84.0	         86	         591	        593	  0.97674	1.0e-4	        42
+   4	MA1733.1	ASR3	RAAWDTRCCCTWAA	1.0e1	   4.2e-3	          -5.46	         0.0	      6.0	         88	          84	        808	  0.06818	9.9e-5	        43
+
+# CentriMo (Local Motif Enrichment Analysis): Version 5.5.7 compiled on Aug 29 2024 at 17:50:13
+# The format of this file is described at https://meme-suite.org/meme/doc/centrimo-output-format.html.
+# centrimo -seqlen 101 -verbosity 1 -oc centrimo_out -bfile ./background -score 5.0 -ethresh 10.0 ./DMSO_3_sequences.fa meme_out/meme.xml streme_out/streme.xml db/motif_databases/MOUSE/uniprobe_mouse.meme db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme

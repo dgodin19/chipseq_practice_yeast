@@ -1,0 +1,4340 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!-- Document definition -->
+<!-- http://zlab.bu.edu/~phaverty/SupplementalData/CisML/cisml.dtd -->
+<!DOCTYPE cis-element-search[
+<!ELEMENT cis-element-search (program-name, parameters, (pattern | multi-pattern-scan)*)>
+<!ELEMENT program-name (#PCDATA)>
+<!ELEMENT parameters (
+  pattern-file, 
+  sequence-file, 
+  background-seq-file?,
+  pattern-pvalue-cutoff?,
+  sequence-pvalue-cutoff?,
+  site-pvalue-cutoff?,
+  sequence-filtering,
+  ANY*
+ )>
+<!ELEMENT command-line (#PCDATA)>
+<!ELEMENT pattern-file (#PCDATA)>
+<!ELEMENT sequence-file (#PCDATA)>
+<!ELEMENT background-seq-file (#PCDATA)>
+<!ELEMENT pattern-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-pvalue-cutoff (#PCDATA)>
+<!ELEMENT site-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-filtering EMPTY>
+<!ELEMENT multi-pattern-scan (pattern+, ANY*)>
+<!ELEMENT pattern (scanned-sequence+, ANY*)>
+<!ELEMENT scanned-sequence (matched-element*, ANY*)>
+<!ELEMENT matched-element (sequence)>
+<!ELEMENT sequence (#PCDATA)>
+<!ATTLIST cis-element-search
+xmlns:xsi CDATA #IMPLIED
+xmlns:mem CDATA #IMPLIED
+xsi:schemaLocation CDATA #IMPLIED
+>
+<!ATTLIST sequence-filtering
+on-off CDATA #REQUIRED
+type CDATA #IMPLIED
+>
+<!ATTLIST multi-pattern-scan
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+>
+<!ATTLIST pattern
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+pvalue CDATA #IMPLIED
+score CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST scanned-sequence
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+length CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST matched-element
+start CDATA #REQUIRED
+stop CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+clusterid CDATA #IMPLIED
+>
+
+]>
+<cis-element-search
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://zlab.bu.edu/schema/cisml cisml.xsd"
+  xmlns="http://zlab.bu.edu/schema/cisml"
+  xmlns:mem="http://noble.gs.washington.edu/meme"
+>
+<program-name>fimo</program-name>
+<parameters>
+<command-line>fimo --verbosity 1 --oc fimo_out_2 --bgfile ./background --motif TCCTACCTACCTGGG meme_out/meme.xml ./DMSO_2_sequences.fa</command-line>
+<pattern-file>meme_out/meme.xml</pattern-file>
+<sequence-file>./DMSO_2_sequences.fa</sequence-file>
+<site-pvalue-cutoff>0.0001</site-pvalue-cutoff>
+<sequence-filtering on-off="off"/>
+</parameters>
+<pattern accession="TCCTACCTACCTGGG" name="MEME-2">
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+<matched-element start="130696" stop="130682" score="-6.55789" pvalue="4.22e-05">
+<sequence>TTCCATCTACCTGGC</sequence>
+<mem:qvalue>0.556</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001133.9" name="NC_001133.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001134.8" name="NC_001134.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+<matched-element start="24721" stop="24707" score="-7.46316" pvalue="6.21e-05">
+<sequence>TCCTATTTACCTAGT</sequence>
+<mem:qvalue>0.736</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001135.5" name="NC_001135.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+<matched-element start="593675" stop="593689" score="-4.70526" pvalue="2.44e-05">
+<sequence>TCGGACATCCCTGGA</sequence>
+<mem:qvalue>0.413</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+<matched-element start="991654" stop="991640" score="31.5684" pvalue="2.21e-10">
+<sequence>TCCTACCTACCTGGG</sequence>
+<mem:qvalue>5.24e-06</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+<matched-element start="1108529" stop="1108543" score="-0.663158" pvalue="9.11e-06">
+<sequence>TCCTCCCTATCTGCT</sequence>
+<mem:qvalue>0.191</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+<matched-element start="1207690" stop="1207704" score="31.5684" pvalue="2.21e-10">
+<sequence>TCCTACCTACCTGGG</sequence>
+<mem:qvalue>5.24e-06</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+<matched-element start="1362301" stop="1362287" score="-9.63158" pvalue="8.23e-05">
+<sequence>TCCTCCCGATCTTGC</sequence>
+<mem:qvalue>0.751</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001136.10" name="NC_001136.10">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+<matched-element start="416681" stop="416667" score="-7.76842" pvalue="6.62e-05">
+<sequence>TCTGCCTTCCCTGGA</sequence>
+<mem:qvalue>0.736</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+<matched-element start="497429" stop="497415" score="31.5684" pvalue="2.21e-10">
+<sequence>TCCTACCTACCTGGG</sequence>
+<mem:qvalue>5.24e-06</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001137.3" name="NC_001137.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001138.5" name="NC_001138.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+<matched-element start="131299" stop="131313" score="-3.89474" pvalue="2.03e-05">
+<sequence>TCCGCATTACCTGCG</sequence>
+<mem:qvalue>0.402</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+<matched-element start="536750" stop="536764" score="31.5684" pvalue="2.21e-10">
+<sequence>TCCTACCTACCTGGG</sequence>
+<mem:qvalue>5.24e-06</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+<matched-element start="731191" stop="731205" score="-8.81053" pvalue="7.1e-05">
+<sequence>TCAACCCTCACTGGG</sequence>
+<mem:qvalue>0.743</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+<matched-element start="822320" stop="822306" score="31.5684" pvalue="2.21e-10">
+<sequence>TCCTACCTACCTGGG</sequence>
+<mem:qvalue>5.24e-06</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001139.9" name="NC_001139.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+<matched-element start="48038" stop="48024" score="-5.51579" pvalue="2.94e-05">
+<sequence>TCAGACGTACCTGTA</sequence>
+<mem:qvalue>0.454</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+<matched-element start="548537" stop="548523" score="31.5684" pvalue="2.21e-10">
+<sequence>TCCTACCTACCTGGG</sequence>
+<mem:qvalue>5.24e-06</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001140.6" name="NC_001140.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001141.2" name="NC_001141.2">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001142.9" name="NC_001142.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+<matched-element start="307101" stop="307087" score="-9.71579" pvalue="9.3e-05">
+<sequence>TCCTCCAAACATGGT</sequence>
+<mem:qvalue>0.807</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+<matched-element start="514405" stop="514419" score="-8.98947" pvalue="7.76e-05">
+<sequence>TCCGACCTTCCACAG</sequence>
+<mem:qvalue>0.751</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001143.9" name="NC_001143.9">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+<matched-element start="416721" stop="416735" score="-4.70526" pvalue="2.44e-05">
+<sequence>TACGACCTACCAAGA</sequence>
+<mem:qvalue>0.413</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+<matched-element start="464080" stop="464094" score="-8.98947" pvalue="7.76e-05">
+<sequence>TCCTCGCCACACGGG</sequence>
+<mem:qvalue>0.751</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+<matched-element start="573334" stop="573320" score="16.8737" pvalue="5.44e-08">
+<sequence>TCCGCCCTAGCTGGA</sequence>
+<mem:qvalue>0.00121</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+<matched-element start="594131" stop="594145" score="31.5684" pvalue="2.21e-10">
+<sequence>TCCTACCTACCTGGG</sequence>
+<mem:qvalue>5.24e-06</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+<matched-element start="651810" stop="651824" score="31.5684" pvalue="2.21e-10">
+<sequence>TCCTACCTACCTGGG</sequence>
+<mem:qvalue>5.24e-06</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+<matched-element start="839793" stop="839779" score="-7.76842" pvalue="6.62e-05">
+<sequence>TCCGCTCTACCGTGA</sequence>
+<mem:qvalue>0.736</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+<matched-element start="867220" stop="867206" score="-6.65263" pvalue="5.01e-05">
+<sequence>CAGTACCTAACTGGG</sequence>
+<mem:qvalue>0.637</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001144.5" name="NC_001144.5">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+<matched-element start="185154" stop="185168" score="31.5684" pvalue="2.21e-10">
+<sequence>TCCTACCTACCTGGG</sequence>
+<mem:qvalue>5.24e-06</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+<matched-element start="197321" stop="197335" score="31.5684" pvalue="2.21e-10">
+<sequence>TCCTACCTACCTGGG</sequence>
+<mem:qvalue>5.24e-06</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+<matched-element start="383081" stop="383067" score="-7.54737" pvalue="6.53e-05">
+<sequence>TCTTAACTACCTATG</sequence>
+<mem:qvalue>0.736</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+<matched-element start="465921" stop="465935" score="-4.70526" pvalue="2.44e-05">
+<sequence>ACTTCCCTACctgaa</sequence>
+<mem:qvalue>0.413</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+<matched-element start="693177" stop="693191" score="-5.74737" pvalue="3.24e-05">
+<sequence>TCCTGGCTGCCTGgc</sequence>
+<mem:qvalue>0.461</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001145.3" name="NC_001145.3">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+<matched-element start="117182" stop="117196" score="-6.55789" pvalue="4.22e-05">
+<sequence>TACAACCTACCTGCT</sequence>
+<mem:qvalue>0.556</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+<matched-element start="269977" stop="269991" score="-9.62105" pvalue="8.11e-05">
+<sequence>TCCGGCTTACTTGGT</sequence>
+<mem:qvalue>0.751</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+<matched-element start="632653" stop="632667" score="-8.81053" pvalue="7.1e-05">
+<sequence>TCAACCCTCACTGGG</sequence>
+<mem:qvalue>0.743</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001146.8" name="NC_001146.8">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+<matched-element start="118693" stop="118707" score="31.5684" pvalue="2.21e-10">
+<sequence>TCCTACCTACCTGGG</sequence>
+<mem:qvalue>5.24e-06</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+<matched-element start="136283" stop="136297" score="-9.71579" pvalue="9.3e-05">
+<sequence>TCCTCGCTTCTTGGT</sequence>
+<mem:qvalue>0.807</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+<matched-element start="616896" stop="616910" score="-5.51579" pvalue="2.94e-05">
+<sequence>TGCTCCCTACTTAGA</sequence>
+<mem:qvalue>0.454</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+<matched-element start="741764" stop="741778" score="-9.63158" pvalue="8.23e-05">
+<sequence>ACCTTCCTAGCTGAT</sequence>
+<mem:qvalue>0.751</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001147.6" name="NC_001147.6">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+<matched-element start="40236" stop="40222" score="-5.74737" pvalue="3.24e-05">
+<sequence>TCCTTCTTATCAGGG</sequence>
+<mem:qvalue>0.461</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+<matched-element start="57441" stop="57455" score="31.5684" pvalue="2.21e-10">
+<sequence>TCCTACCTACCTGGG</sequence>
+<mem:qvalue>5.24e-06</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+<matched-element start="809574" stop="809560" score="31.5684" pvalue="2.21e-10">
+<sequence>TCCTACCTACCTGGG</sequence>
+<mem:qvalue>5.24e-06</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+<matched-element start="845402" stop="845416" score="31.5684" pvalue="2.21e-10">
+<sequence>TCCTACCTACCTGGG</sequence>
+<mem:qvalue>5.24e-06</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+<matched-element start="855562" stop="855548" score="31.5684" pvalue="2.21e-10">
+<sequence>TCCTACCTACCTGGG</sequence>
+<mem:qvalue>5.24e-06</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<scanned-sequence accession="NC_001148.4" name="NC_001148.4">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+</cis-element-search>
