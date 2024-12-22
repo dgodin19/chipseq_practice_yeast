@@ -89,7 +89,7 @@ The following tables can be found in results/motifs/{condition}/summary.tsv.
 
  Command Used
 
-```bash
+bash
 meme-chip -oc . -time 240 -ccut 100 -dna -order 2 -minw 6 -maxw 15 \
 -db db/motif_databases/MOUSE/uniprobe_mouse.meme \
 -db db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme \
@@ -135,7 +135,7 @@ meme-chip -oc . -time 240 -ccut 100 -dna -order 2 -minw 6 -maxw 15 \
 
  Command Used
 
-```bash
+bash
 meme-chip -oc . -time 240 -ccut 100 -dna -order 2 -minw 6 -maxw 15 \
 -db db/motif_databases/MOUSE/uniprobe_mouse.meme \
 -db db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme \
@@ -169,7 +169,7 @@ meme-chip -oc . -time 240 -ccut 100 -dna -order 2 -minw 6 -maxw 15 \
 
  Command Used
 
-```bash
+bash
 meme-chip -oc . -time 240 -ccut 100 -dna -order 2 -minw 6 -maxw 15 \
 -db db/motif_databases/MOUSE/uniprobe_mouse.meme \
 -db db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme \
@@ -198,7 +198,7 @@ DMSO_1
 
  Command Used
 
-```bash
+bash
 meme-chip -oc . -time 240 -ccut 100 -dna -order 2 -minw 6 -maxw 15 \
 -db db/motif_databases/MOUSE/uniprobe_mouse.meme \
 -db db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme \
@@ -227,7 +227,7 @@ DMSO_2
 
  Command Used
 
-```bash
+bash
 meme-chip -oc . -time 240 -ccut 100 -dna -order 2 -minw 6 -maxw 15 \
 -db db/motif_databases/MOUSE/uniprobe_mouse.meme \
 -db db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme \
@@ -263,7 +263,7 @@ DMSO_3
 
  Command Used
 
-```bash
+bash
 meme-chip -oc . -time 240 -ccut 100 -dna -order 2 -minw 6 -maxw 15 \
 -db db/motif_databases/MOUSE/uniprobe_mouse.meme \
 -db db/motif_databases/JASPAR/JASPAR2022_CORE_non-redundant_v2.meme \
